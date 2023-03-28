@@ -14,6 +14,26 @@
     background-color: rgb(242, 240, 240);
 }
 
+.slideshow-overlay {
+    background-color: rgba(0, 0 , 0, 0.3);
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        user-select: none;
+        max-width: 300px;
+        padding-left: 10px;
+        border-radius: 10px;
+        color: white;
+        font-size: 80px;
+        border-left: 7px solid red;
+        translate: -20px -50px;
+    }
+}
+
 .img-slideshow {
     width: 100vw;
     height: 100vh;
