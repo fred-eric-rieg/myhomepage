@@ -1,3 +1,3 @@
-<div class="slideshow-container">
+<div [ngClass]="{'slideshow-container' : blackBg, 'slideshow-container-white' : !blackBg}">
     <img *ngIf="showImage" class="img-slideshow" src="assets/img/{{ images[currentImage] }}">
 </div>

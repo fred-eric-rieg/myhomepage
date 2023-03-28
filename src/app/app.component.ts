@@ -9,6 +9,7 @@ export class AppComponent implements OnInit {
   images = ['books.jpg', 'darmstadt.jpg', 'it.jpg'];
   currentImage = 0;
   showImage = true;
+  blackBg = true;
 
   /**
    * OnInit kommt aus der Angular library und wird beim Laden der Seite ausgeführt.
@@ -25,6 +26,7 @@ export class AppComponent implements OnInit {
       this.showImage = false;
 
       setTimeout(() => {
+        this.currentImage === 2 ? this.blackBg = false : this.blackBg = true; // Nur img 2 soll einen weißen Hintergrund erhalten.
         this.showImage = true;
       },10);
     }, 8000)
