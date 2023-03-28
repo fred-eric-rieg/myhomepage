@@ -4,7 +4,7 @@
 
 
 <div class="slideshow-container slideshow-overlay">
-    <p>
-        This is amazing!
+    <p *ngIf="showImage" class="fadeIn">
+        {{ headlines[currentImage] }}
     </p>
 </div>
