@@ -16,13 +16,14 @@
 
 
 .header-logo {
+    user-select: none;
     display: flex;
     height: 60px;
     object-fit: contain;
 }
 
-
 .header-links {
+    user-select: none;
     display: flex;
     flex-direction: row;
     gap: 25px;
