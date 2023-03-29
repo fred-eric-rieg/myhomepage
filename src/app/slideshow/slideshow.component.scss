@@ -1,4 +1,6 @@
 .slideshow-container {
+    position: fixed;
+    top: 80px;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
@@ -7,6 +9,8 @@
 }
 
 .slideshow-container-white {
+    position: fixed;
+    top: 80px;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
@@ -16,11 +20,12 @@
 
 .slideshow-overlay {
     background-color: rgba(0, 0 , 0, 0.4);
-    position: absolute;
-    top: 0;
+    position: fixed;
+    top: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 
     p {
         user-select: none;
