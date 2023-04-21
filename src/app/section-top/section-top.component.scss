@@ -16,3 +16,20 @@
     border-radius: 100%;
     background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #5988FF 6.25%, #5988FF 51.56%, #0043F0 100%)
 }
+
+.headline-text-box {
+    position: absolute;
+    width: 645px;
+    left: 731px;
+    top: 227px;
+
+    h1 {
+        font-size: 64px;
+        color: #5988FF;
+    }
+
+    h2 {
+        font-size: 32px;
+        color: #5988FF;
+    }
+}
