@@ -13,7 +13,6 @@
         display: flex;
         flex-direction: column;
         width: 50%;
-        height: 100%;
 
         span {
             cursor: default;
@@ -44,12 +43,12 @@
 
 .box {
     transition: all 225ms ease-in-out;
-    width: max-content;
+    width: 100%;
 
     img {
         transition: all 225ms ease-in-out;
         box-sizing: border-box;
-        width: 80%;
+        width: 50%;
         filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.15)) grayscale(100%);
     }
 
@@ -62,6 +61,7 @@
         width: 0px;
         border: 0px solid #6B2737;
         border-radius: 10px;
+        z-index: -1;
 
         font-size: 0px;
         align-items: center;
@@ -75,19 +75,18 @@
         }
     }
 
-    .left {
-        top: -52%;
-        left: 50%;
+    .pos1 {
+        top: -100px;
     }
 
-    .right {
-        top: -50%;
-        left: 50%;
+    .pos2 {
+        top: -144px;
+        left: 150px;
     }
 
     &:hover img {
         transition: all 225ms ease-in-out;
-        width: 82%;
+        width: 55%;
         filter: grayscale(100%) blur(1px) drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.15));
     }
 
@@ -96,6 +95,7 @@
         width: 100px;
         font-size: 16px;
         border: 2px solid #6B2737;
+        transform: translateX(760px);
     }
 
     &:hover .horizontal-line {
@@ -106,14 +106,13 @@
 
     &:hover .magic-box {
         transition: all 225ms ease-in-out;
-        transform: translateX(500px);
+        transform: translateX(760px);
     }
 }
 
 .magic-box {
     transition: all 225ms ease-in-out;
     position: absolute;
-    margin-left: 100px;
     top: 30%;
     width: 100%;
     height: fit-content;
@@ -131,8 +130,8 @@
 
     p {
         cursor: default;
-        width: 300px;
-        font-size: 16px !important;
+        width: 500px;
+        font-size: 24px !important;
         color: #6B2737;
     }
 }
@@ -147,8 +146,16 @@
 
 @media screen and (max-height: 800px) {
     .magic-box {
-        top: 50%;
+        top: 45%;
         justify-content: unset;
         height: unset;
+
+        span {
+            font-size: 24px !important;
+        }
+
+        p {
+            font-size: 16px !important;
+        }
     }
 }
