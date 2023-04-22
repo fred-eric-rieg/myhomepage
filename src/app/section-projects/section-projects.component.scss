@@ -44,6 +44,7 @@
 .box {
     transition: all 225ms ease-in-out;
     width: 100%;
+    background: black;
 
     img {
         transition: all 225ms ease-in-out;
@@ -61,7 +62,7 @@
         width: 0px;
         border: 0px solid #6B2737;
         border-radius: 10px;
-        z-index: -1;
+        z-index: 1;
 
         font-size: 0px;
         align-items: center;
@@ -114,12 +115,12 @@
     transition: all 225ms ease-in-out;
     position: absolute;
     top: 30%;
-    width: 100%;
     height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    z-index: -1;
+    background: orange;
+    z-index: 1;
 
     span {
         cursor: default;
