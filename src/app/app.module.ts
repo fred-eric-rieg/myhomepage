@@ -8,6 +8,7 @@ import { AboutComponent } from './about/about.component';
 import { MainpageComponent } from './mainpage/mainpage.component';
 import { HeaderComponent } from './header/header.component';
 import { SectionTopComponent } from './section-top/section-top.component';
+import { SectionSkillsComponent } from './section-skills/section-skills.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SectionTopComponent } from './section-top/section-top.component';
     AboutComponent,
     MainpageComponent,
     HeaderComponent,
-    SectionTopComponent
+    SectionTopComponent,
+    SectionSkillsComponent
   ],
   imports: [
     BrowserModule,
