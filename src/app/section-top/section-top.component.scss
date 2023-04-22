@@ -49,6 +49,20 @@
         width: max-content;
         margin-bottom: 32px;
     }
+
+    @media screen and (max-height: 800px) {
+        width: 400px;
+        left: 600px;
+        top: 200px;
+
+        h1 {
+            font-size: 100px;
+        }
+
+        h2 {
+            font-size: 50px;
+        }
+    }
 }
 
 .vertical-line {
@@ -67,6 +81,16 @@
         font-size: 24px;
         color: #456990;
         font-weight: 500;
+    }
+
+    @media screen and (max-height: 1000px) {
+        height: 100px;
+
+        span {
+            top: -30px;
+            left: -35px;
+            font-size: 20px;
+        }
     }
 }
 
