@@ -1,7 +1,60 @@
 .section-skills-background {
-    position: absolute;
-    top: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 100vh;
     left: 0;
     width: 100%;
     height: 100vh;
+}
+
+.wrapper {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.headline {
+    display: flex;
+    position: relative;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+
+    span {
+        width: 600px;
+        height: fit-content;
+        font-size: 128px;
+        font-weight: bold;
+        color: #5988FF;
+    }
+}
+
+.text {
+    display: flex;
+    position: relative;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        width: 500px;
+        height: fit-content;
+        font-size: 24px;
+        color: #5988FF;
+    }
+}
+
+.skills-wrapper {
+    position: relative;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(128.94deg, #5988FF -33.96%, #5988FF 36.71%, #0043F0 112.25%);
 }
