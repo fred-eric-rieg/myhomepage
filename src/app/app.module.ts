@@ -9,6 +9,7 @@ import { MainpageComponent } from './mainpage/mainpage.component';
 import { HeaderComponent } from './header/header.component';
 import { SectionTopComponent } from './section-top/section-top.component';
 import { SectionSkillsComponent } from './section-skills/section-skills.component';
+import { SectionProjectsComponent } from './section-projects/section-projects.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SectionSkillsComponent } from './section-skills/section-skills.componen
     MainpageComponent,
     HeaderComponent,
     SectionTopComponent,
-    SectionSkillsComponent
+    SectionSkillsComponent,
+    SectionProjectsComponent
   ],
   imports: [
     BrowserModule,
