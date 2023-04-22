@@ -38,13 +38,13 @@
 
     h1 {
         font-size: 128px;
-        color: #5988FF;
+        color: #456990;
         margin: 0;
     }
 
     h2 {
         font-size: 64px;
-        color: #5988FF;
+        color: #456990;
         margin: 0;
         width: max-content;
         margin-bottom: 32px;
@@ -58,14 +58,14 @@
     height: 330px;
     left: calc(50% - 1px);
     bottom: 0px;
-    border: 2px solid #5988FF;
+    border: 2px solid #456990;
 
     span {
         position: relative;
         top: -32px;
         left: -44px;
         font-size: 24px;
-        color: #5988FF;
+        color: #456990;
         font-weight: 500;
     }
 }
@@ -87,6 +87,10 @@
             transition: all 225ms ease-in-out;
             width: 32px;
             height: 32px;
+        }
+
+        .fill-color {
+            fill: #456990;
         }
 
         &:hover img {
