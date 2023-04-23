@@ -44,6 +44,7 @@
     cursor: pointer;
     transition: all 225ms ease-in-out;
     width: 100%;
+    justify-content: center;
 
     img {
         transition: all 225ms ease-in-out;
@@ -64,10 +65,11 @@
     }
 
     .line {
+        float: right;
         transition: all 225ms ease-in-out;
         position: relative;
         justify-content: center;
-        left: 75%;
+        right: 75%;
         top: 5%;
         display: flex;
         height: 0;
@@ -78,15 +80,16 @@
 }
 
 .magic-box {
-    margin-top: calc(55%);
+    margin-top: 5%;
     transition: all 225ms ease-in-out;
     height: fit-content;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: flex-end;
     opacity: 0;
 
     span {
+        text-align: end;
         cursor: default;
         font-size: 32px !important;
         font-weight: bold;
@@ -94,6 +97,7 @@
     }
 
     p {
+        text-align: end;
         cursor: default;
         width: 500px;
         font-size: 24px !important;
