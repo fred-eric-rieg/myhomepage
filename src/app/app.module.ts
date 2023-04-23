@@ -14,6 +14,7 @@ import { SectionProjectsTwoComponent } from './section-projects-two/section-proj
 import { SectionProjectsThreeComponent } from './section-projects-three/section-projects-three.component';
 import { SectionProjectsOneComponent } from './section-projects-one/section-projects-one.component';
 import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ContactComponent } from './contact/contact.component';
     SectionProjectsTwoComponent,
     SectionProjectsThreeComponent,
     SectionProjectsOneComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

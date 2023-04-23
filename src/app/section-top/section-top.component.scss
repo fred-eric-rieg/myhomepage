@@ -8,13 +8,14 @@
 }
 
 .blue-circle-big {
+    display: flex;
     position: absolute;
     top: -71px;
     left: -220px;
     width: 892px;
     height: 892px;
     border-radius: 100%;
-    background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #5988FF 6.25%, #5988FF 51.56%, #0043F0 100%);
+    background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #456990 6.25%, #456990 51.56%, #114B5F 100%);
 
     img {
         display: flex;

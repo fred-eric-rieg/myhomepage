@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./section-skills.component.scss']
 })
 export class SectionSkillsComponent {
+  constructor() {
 
+  }
+
+  scrollBottom() {
+    window.scrollTo({ top: 10000, behavior: 'smooth' })
+  }
 }
