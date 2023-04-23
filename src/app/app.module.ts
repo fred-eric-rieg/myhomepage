@@ -11,6 +11,9 @@ import { SectionTopComponent } from './section-top/section-top.component';
 import { SectionSkillsComponent } from './section-skills/section-skills.component';
 import { SectionProjectsComponent } from './section-projects/section-projects.component';
 import { SectionProjectsTwoComponent } from './section-projects-two/section-projects-two.component';
+import { SectionProjectsThreeComponent } from './section-projects-three/section-projects-three.component';
+import { SectionProjectsOneComponent } from './section-projects-one/section-projects-one.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { SectionProjectsTwoComponent } from './section-projects-two/section-proj
     SectionTopComponent,
     SectionSkillsComponent,
     SectionProjectsComponent,
-    SectionProjectsTwoComponent
+    SectionProjectsTwoComponent,
+    SectionProjectsThreeComponent,
+    SectionProjectsOneComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

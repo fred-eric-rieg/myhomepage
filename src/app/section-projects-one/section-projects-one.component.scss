@@ -112,7 +112,7 @@
         display: flex;
         height: 40px;
         width: 100px;
-        border: 2px solid #456990;
+        border: 2px solid #456990;;
         border-radius: 10px;
 
         font-size: 16px;
@@ -122,7 +122,7 @@
 
         &:hover {
             transition: all 225ms ease-in-out;
-            background: #456990;
+            background: #456990;;
             color: white;
         }
     }

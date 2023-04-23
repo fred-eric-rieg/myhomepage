@@ -5,25 +5,24 @@
     top: 100vh;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 50vh;
 
     .wrapper {
         padding: 100px;
         display: flex;
         flex-direction: column;
-        width: 50%;
 
         span {
             cursor: default;
             font-size: 128px;
             font-weight: bold;
-            color: #6B2737;
+            color: #456990;
         }
 
         p {
             cursor: default;
             font-size: 32px;
-            color: #6B2737;
+            color: #456990;
         }
     }
 
@@ -36,112 +35,6 @@
             p {
                 font-size: 32px;
             }
-        }
-    }
-}
-
-.box {
-    cursor: pointer;
-    transition: all 225ms ease-in-out;
-    width: 100%;
-
-    img {
-        transition: all 225ms ease-in-out;
-        box-sizing: border-box;
-        max-width: 400px;
-        filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.15)) grayscale(100%);
-    }
-
-    &:hover img {
-        max-width: 404px;
-        border: 2px solid #6B2737;
-        filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.15)) grayscale(0%);
-    }
-
-    &:hover .line {
-        width: 400px;
-        font-size: 16px;
-    }
-
-    .line {
-        transition: all 225ms ease-in-out;
-        position: relative;
-        justify-content: center;
-        left: 75%;
-        top: 5%;
-        display: flex;
-        height: 0;
-        border: 2px solid #6B2737;
-        width: 0px;
-        font-size: 0px;
-    }
-}
-
-.magic-box {
-    margin-top: calc(55%);
-    transition: all 225ms ease-in-out;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    opacity: 0;
-
-    span {
-        cursor: default;
-        font-size: 32px !important;
-        font-weight: bold;
-        color: #6B2737;
-    }
-
-    p {
-        cursor: default;
-        width: 500px;
-        font-size: 24px !important;
-        color: #6B2737;
-    }
-
-    .btn-box {
-        display: flex;
-        flex-direction: row;
-        gap: 16px;
-    }
-
-    .button {
-        transition: all 225ms ease-in-out;
-        cursor: pointer;
-        display: flex;
-        height: 40px;
-        width: 100px;
-        border: 2px solid #6B2737;
-        border-radius: 10px;
-
-        font-size: 16px;
-        align-items: center;
-        justify-content: center;
-        background: white;
-
-        &:hover {
-            transition: all 225ms ease-in-out;
-            background: #6B2737;
-            color: white;
-        }
-    }
-}
-
-.show-box {
-    transition: all 225ms ease-in-out;
-    opacity: 1;
-}
-
-@media screen and (max-height: 800px) {
-    .magic-box {
-
-        span {
-            font-size: 24px !important;
-        }
-
-        p {
-            font-size: 16px !important;
         }
     }
 }
