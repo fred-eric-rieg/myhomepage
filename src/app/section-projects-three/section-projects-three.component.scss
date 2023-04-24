@@ -147,6 +147,11 @@
             color: white;
         }
     }
+
+    @media screen and (width < 1440px) {
+        margin-top: 10%;
+        margin-right: 100px;
+    }
 }
 
 .show-box {

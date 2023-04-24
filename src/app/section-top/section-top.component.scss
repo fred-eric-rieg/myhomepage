@@ -24,7 +24,12 @@
         height: 100%;
     }
 
-    @media screen and (max-height: 800px) {
+    @media screen and (height < 850px) {
+        width: 750px;
+        height: 750px;
+    }
+
+    @media screen and (width < 1440px) {
         width: 750px;
         height: 750px;
     }
@@ -46,13 +51,14 @@
     h2 {
         font-size: 64px;
         color: #456990;
-        margin: 0;
         width: max-content;
+        margin: 0;
         margin-bottom: 32px;
     }
 
-    @media screen and (max-height: 800px) {
+    @media screen and (height < 850px) {
         width: 400px;
+        margin-right: 100px;
         left: 600px;
         top: 200px;
 
@@ -62,6 +68,45 @@
 
         h2 {
             font-size: 50px;
+        }
+    }
+
+    @media screen and (width < 1440px) {
+        width: 400px;
+        margin-right: 100px;
+        left: 600px;
+        top: 200px;
+
+        h1 {
+            font-size: 100px;
+        }
+
+        h2 {
+            font-size: 50px;
+        }
+    }
+
+    @media screen and (width < 1840px) {
+        width: 500px;
+        margin-right: 200px;
+
+        h1 {
+            font-size: 96px;
+        }
+
+        h2 {
+            font-size: 42px;
+        }
+    }
+
+    @media screen and (width < 1240px) {
+        h1 {
+            font-size: 80px;
+        }
+
+        h2 {
+            width: fit-content;
+            margin-right: 100px;
         }
     }
 }
@@ -127,5 +172,19 @@
 
     @media screen and (width > 1440px) {
         right: 200px;
+    }
+
+    @media screen and (height < 850px) {
+        bottom: 50px;
+        flex-direction: row;
+
+        .image-wrap {
+            width: 50px;
+
+            &:hover img {
+                transition: all 225ms ease-in-out;
+                transform: translateY(20px);
+            }
+        }
     }
 }
