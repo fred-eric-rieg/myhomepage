@@ -58,3 +58,14 @@
         margin-right: 200px;
     }
 }
+
+.imprint {
+    height: 30px;
+    cursor: pointer;
+    transition: all 225ms ease-in-out;
+
+    &:hover {
+        transition: all 225ms ease-in-out;
+        font-size: 18px;
+    }
+}
