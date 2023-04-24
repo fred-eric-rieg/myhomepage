@@ -124,4 +124,8 @@
             transform: translateX(-20px);
         }
     }
+
+    @media screen and (width > 1440px) {
+        right: 200px;
+    }
 }

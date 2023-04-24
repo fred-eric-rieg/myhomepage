@@ -1,3 +1,8 @@
+@function get-vw($target) {
+    $vw-context: (1000*.01) * 1px;
+    @return ($target/$vw-context) * 1vw;
+}
+
 .section-projects-background {
     display: flex;
     flex-direction: row;
@@ -8,10 +13,10 @@
     height: 50vh;
 
     .wrapper {
-        padding: 100px;
         display: flex;
         flex-direction: column;
         width: 50%;
+        margin-left: 100px;
 
         span {
             cursor: default;
@@ -24,6 +29,10 @@
             cursor: default;
             font-size: 32px;
             color: #456990;
+        }
+
+        @media screen and (width > 1440px) {
+            margin-left: 200px;
         }
     }
 
@@ -50,6 +59,10 @@
         box-sizing: border-box;
         max-width: 400px;
         filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.15)) grayscale(100%);
+
+        @media screen and (width > 1440px) {
+            max-width: 500px;
+        }
     }
 
     &:hover img {
@@ -61,6 +74,10 @@
     &:hover .line {
         width: 400px;
         font-size: 16px;
+
+        @media screen and (width > 1440px) {
+            width: get-vw(400px);
+        }
     }
 
     .line {
@@ -74,6 +91,10 @@
         border: 2px solid #456990;
         width: 0px;
         font-size: 0px;
+
+        @media screen and (width > 1440px) {
+            left: 50%;
+        }
     }
 }
 

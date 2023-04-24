@@ -8,7 +8,8 @@
     height: 50vh;
 
     .wrapper {
-        padding: 100px;
+        margin-top: 100px;
+        margin-left: 100px;
         display: flex;
         flex-direction: column;
 
@@ -23,6 +24,10 @@
             cursor: default;
             font-size: 32px;
             color: #456990;
+        }
+
+        @media screen and (width > 1440px) {
+            margin-left: 200px;
         }
     }
 

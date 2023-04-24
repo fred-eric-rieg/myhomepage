@@ -58,9 +58,28 @@
         width: min-content;
         margin-top: 150px;
 
+        .tooltip {
+            transition: all 225ms ease-in-out;
+            opacity: 0;
+            position: relative;
+            width: 100px;
+            top: 10px;
+            left: 20px;
+        }
+
         &:hover {
             transition: all 225ms ease-in-out;
-            transform: scale(1.1);}
+            transform: scale(1.1);
+        }
+
+        &:hover .tooltip {
+            transition: all 225ms ease-in-out;
+            opacity: 1;
+        }
+    }
+
+    @media screen and (width > 1440px) {
+        margin-left: 200px;
     }
 }
 
@@ -146,5 +165,8 @@
             color: white;
         }
     }
-    
+
+    @media screen and (width > 1440px) {
+        margin-right: 200px;
+    }
 }

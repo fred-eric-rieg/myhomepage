@@ -18,6 +18,10 @@
     font-weight: bold;
     width: 33%;
     margin-left: 100px;
+
+    @media screen and (width > 1440px) {
+        margin-left: 200px;
+    }
 }
 
 .middle {
@@ -48,5 +52,9 @@
         &:hover {
             transform: scale(1.1);
         }
+    }
+
+    @media screen and (width > 1440px) {
+        margin-right: 200px;
     }
 }
