@@ -148,6 +148,7 @@
     bottom: 100px;
 
     .image-wrap {
+        cursor: pointer;
         display: flex;
         justify-content: flex-end;
         width: 100px;
@@ -183,7 +184,7 @@
 
             &:hover img {
                 transition: all 225ms ease-in-out;
-                transform: translateY(20px);
+                transform: translateY(-20px);
             }
         }
     }
