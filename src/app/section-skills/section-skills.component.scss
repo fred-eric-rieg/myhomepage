@@ -30,7 +30,7 @@
         width: 600px;
         max-width: 80%;
         height: fit-content;
-        font-size: 128px;
+        font-size: 96px;
         font-weight: bold;
         color: #114B5F;
     }
@@ -48,7 +48,7 @@
 
     p {
         height: fit-content;
-        font-size: 24px;
+        font-size: 20px;
         color: #114B5F;
     }
 
@@ -92,7 +92,7 @@
     span {
         display: block;
         color: white;
-        font-size: 96px;
+        font-size: 80px;
         font-weight: bold;
         cursor: default;
     }
@@ -105,8 +105,8 @@
         width: calc(100% - 200px);
         margin-left: 100px;
         margin-right: 100px;
-        height: fit-content;
-        margin-top: 42px;
+        margin-top: 36px;
+
 
         .icon-wrap {
             display: flex;
@@ -115,11 +115,15 @@
             justify-content: center;
             width: 80px;
             gap: 16px;
+
+            img {
+                width: 50px;
+            }
         }
 
         span {
             cursor: default;
-            font-size: 24px;
+            font-size: 18px;
             font-weight: normal;
         }
     }

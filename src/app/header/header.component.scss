@@ -58,14 +58,16 @@
 
 .burger-items {
     transition: all 225ms ease-in-out;
+    box-sizing: border-box;
     display: flex;
     position: absolute;
     flex-direction: column;
-    right: -3000px;
+    right: -300px;
     top: 80px;
     background: #114B5F;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
+    z-index: 2;
 
     .burger-menu-item1 {
         box-sizing: border-box;
@@ -73,9 +75,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        display: flex;
         border-top-left-radius: 10px;
-        width: 150px;
+        width: 120px;
         height: 40px;
 
         &:hover {
@@ -88,7 +89,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 150px;
+        width: 120px;
         height: 40px;
 
         &:hover {
@@ -102,7 +103,7 @@
         align-items: center;
         justify-content: center;
         border-bottom-left-radius: 10px;
-        width: 150px;
+        width: 120px;
         height: 40px;
 
         &:hover {
