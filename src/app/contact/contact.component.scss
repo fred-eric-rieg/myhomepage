@@ -13,7 +13,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
+    width: calc(50% - 100px);
     height: 100%;
     margin-left: 100px;
     margin-right: 50px;
@@ -77,10 +77,6 @@
             opacity: 1;
         }
     }
-
-    @media screen and (width > 1440px) {
-        margin-left: 200px;
-    }
 }
 
 .right {
@@ -89,7 +85,7 @@
     justify-content: center;
     align-items: center;
     margin-right: 100px;
-    width: 50%;
+    width: calc(50% - 100px);
     height: 100%;
 
     .form {
@@ -165,25 +161,83 @@
             color: white;
         }
     }
+}
 
-    @media screen and (width > 1440px) {
+@media screen and (width > 1440px) {
+    .left {
+        margin-left: 200px;
+    }
+
+    .right {
         margin-right: 200px;
     }
 }
 
-@media screen and (width < 800px) {
+@media screen and (width < 1200px) {}
+
+@media screen and (width < 900px) {
     .left {
-        width: 100%;
-        margin-right: 100px;
+        width: calc(100% - 200px);
+        .icon {
+            position: absolute;
+            margin: unset;
+            right: 0;
+            top: 32px;
+            .tooltip {
+                left: -140px;
+            }
+        }
     }
 
     .right {
-        box-sizing: border-box;
-        width: 100%;
+        width: calc(100% - 200px);
         margin-left: 100px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+
+        textarea {
+            height: 100px;
+        }
+        
+        button {
+            padding: 8px 25px;
+            height: 40px;
+        }
     }
 
     .contact-background {
         flex-direction: column;
+    }
+}
+
+@media screen and (width < 900px) and (height < 600px) {
+    .contact-background {
+        height: 100vh;
+    }
+}
+
+@media screen and (width < 600px) {
+    .contact-background {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .left {
+        margin-left: 50px;
+        margin-right: 50px;
+        width: calc(100% - 50px);
+    }
+
+    .right {
+        margin-left: 50px;
+        margin-right: 50px;
+        width: calc(100% - 50px);
+    }
+}
+
+@media screen and (width < 600px) and (height < 700px) {
+    .icon {
+        top: -50px !important;
+        right: -56px !important;
     }
 }
