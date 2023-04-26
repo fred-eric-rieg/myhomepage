@@ -101,18 +101,19 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: center;
-        width: 100%;
+        justify-content: space-between;
+        width: calc(100% - 200px);
+        margin-left: 100px;
+        margin-right: 100px;
         height: fit-content;
-        gap: 200px;
         margin-top: 42px;
 
         .icon-wrap {
             display: flex;
             flex-direction: column;
-            width: 100px;
             align-items: center;
             justify-content: center;
+            width: 80px;
             gap: 16px;
         }
 
@@ -120,46 +121,6 @@
             cursor: default;
             font-size: 24px;
             font-weight: normal;
-        }
-    }
-
-    @media screen and (max-height: 800px) {
-        span {
-            font-size: 64px;
-        }
-
-        .icon-row {
-            gap: 150px;
-            margin-top: 32px;
-
-            .icon-wrap {
-                width: 100px;
-            }
-
-            span {
-                font-size: 16px;
-            }
-
-            img {
-                width: 50px;
-            }
-        }
-    }
-
-    @media screen and (width < 1440px) {
-        .icon-row {
-            transform: scale(0.9);
-            margin-left: 100px;
-            margin-right: 100px;
-            gap: 150px;
-        }
-    }
-
-    @media screen and (width < 1240px) {
-        .icon-row {
-            transform: scale(0.8);
-            margin-left: 100px;
-            margin-right: 100px;
         }
     }
 }
@@ -173,27 +134,22 @@
     .text {
         margin-right: 200px;
     }
-}
 
-@media screen and (width <= 1440px) {
-    .headline {
-        span {
-            font-size: 64px;
-        }
-    }
-    .text {
-        p {
-            font-size: 18px;
-        }
-        .send-message-btn {
-            width: 200px;
-            height: 40px;
-            font-size: 16px;
+    .skills-wrapper {
+        .icon-row {
+            width: calc(100% - 400px);
+            margin-left: 200px;
+            margin-right: 200px;
         }
     }
 }
 
 @media screen and (width < 1200px) {
+    .headline {
+        span {
+            font-size: 64px;
+        }
+    }
     .text {
         p {
             font-size: 16px;
@@ -232,6 +188,22 @@
             text-align: center;
         }
     }
+
+    .skills-wrapper {
+        span {
+            font-size: 48px !important;
+        }
+
+        .icon-wrap {
+            width: 40px !important;
+            img {
+                width: 40px !important;
+            }
+            span {
+                font-size: 16px !important;
+            }
+        }
+    }
 }
 
 @media screen and (width < 600px) {
@@ -251,6 +223,29 @@
             font-size: 14px;
         }
     }
+
+    .skills-wrapper {
+        span {
+            font-size: 48px !important;
+        }
+
+        .icon-row {
+            width: calc(100% - 100px);
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .icon-wrap {
+            width: 30px !important;
+            img {
+                width: 30px !important;
+            }
+            span {
+                font-size: 12px !important;
+            }
+        }
+    }
+
 }
 
 @media screen and (width < 400px) {

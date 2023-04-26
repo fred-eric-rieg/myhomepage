@@ -54,21 +54,22 @@
     }
 
     &:hover .line {
-        width: 400px;
+        width: calc(200%);
         font-size: 16px;
     }
 
     .line {
         transition: all 225ms ease-in-out;
         position: relative;
-        justify-content: center;
-        left: 75%;
+        justify-content: flex-end;
+        left: 0;
         top: 5%;
         display: flex;
-        height: 0;
-        border: 2px solid #456990;
-        width: 0px;
+        height: 2px;
+        width: 2px;
         font-size: 0px;
+        background: #456990;
+        color: #456990;
     }
 }
 
@@ -156,10 +157,6 @@
         img {
             max-width: 300px;
         }
-
-        .line {
-            left: 50%;
-        }
     }
 
     .magic-box {
@@ -193,8 +190,33 @@
 
 @media screen and (width < 600px) {
     .section-projects-background {
+        flex-direction: column;
         margin-left: 50px;
         margin-right: 50px;
         width: calc(100% - 100px);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .wrapper {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .line {
+        display: none !important;
+    }
+
+    .magic-box {
+        margin-top: 16pxpx;
+        margin-bottom: 16px;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (width < 600px) and (height < 800px) {
+    .section-projects-background {
+        height: 100vh;
     }
 }
