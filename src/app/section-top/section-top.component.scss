@@ -100,9 +100,11 @@
     }
 }
 
-.rotate {
-    transition: all 225ms ease-in-out;
-    background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #456990 6.25%, #456990 51.56%, #114B5F 100%);
+/** Responsiveness media queries **/
+@media screen and (width > 1440px) {
+    .icons {
+        right: 200px;
+    }
 }
 
 @media screen and (width <= 1440px) {
@@ -135,11 +137,9 @@
         width: 0px;
         height: 10%;
     }
-}
 
-@media screen and (width > 1440px) {
     .icons {
-        right: 200px;
+        bottom: 50px;
     }
 }
 
@@ -173,12 +173,13 @@
         transition: all 225ms ease-in-out;
         width: 450px;
         height: 450px;
+        top: -200px
     }
 
     .headline-text-box {
         transition: all 225ms ease-in-out;
-        left: 250px;
-        top: 200px;
+        left: 100px;
+        top: 250px;
 
         h1 {
             font-size: 42px;
@@ -186,8 +187,12 @@
         }
 
         h2 {
-            font-size: 24px;
+            font-size: 20px;
             margin: unset;
         }
+    }
+
+    .icons {
+        right: 50px;
     }
 }

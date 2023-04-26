@@ -57,23 +57,27 @@
 }
 
 @media screen and (width > 1440px) {
-    .header {
-        .header-right {
-            margin-right: 200px;
-        }
-        .header-left {
-            margin-left: 200px;
-        }
+    .header-right {
+        margin-right: 200px;
+    }
+
+    .header-left {
+        margin-left: 200px;
     }
 }
 
 @media screen and (width < 1200px) {
 
-    .header {
+    .header-right {
+        max-width: calc(50% - 100px);
 
         span {
             font-size: 0px !important;
         }
+    }
+
+    .header-span-wrap {
+        width: 0px !important;
     }
 
     .burger-menu {
@@ -120,5 +124,16 @@
         height: 4px;
         background-color: #456990;
         margin: 4px 0;
+    }
+}
+
+@media screen and (width < 600px) {
+    .header-right {
+        margin-right: 50px !important;
+        max-width: calc(50% - 50px);
+    }
+
+    .header-left {
+        margin-left: 50px !important;
     }
 }
