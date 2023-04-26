@@ -1,9 +1,14 @@
+:host {
+    height: var(--doc-height);
+}
+
 .section-top-background {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
+    height: var(--doc-height);
     background: linear-gradient(179.99deg, #ffffff 12.89%, #EAF0FF 91.39%);
 }
 
@@ -107,7 +112,7 @@
     }
 }
 
-@media screen and (width <= 1440px) {
+@media screen and (width <=1440px) {
     .blue-circle-big {
         transition: all 225ms ease-in-out;
         width: 650px;
