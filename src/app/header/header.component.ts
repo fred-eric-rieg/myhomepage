@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+  openBurger: boolean = false;
+
   constructor() {
 
   }
@@ -15,10 +17,27 @@ export class HeaderComponent {
   }
 
   scrollProjects() {
+
+    window.scrollTo({ top: window.innerHeight * 2, behavior: 'smooth' })
+
     window.scrollTo({ top: window.innerHeight * 2, behavior: 'smooth' })
   }
 
   scrollContact() {
-    window.scrollTo({ top: window.innerHeight * 4, behavior: 'smooth' })
+    if (window.innerWidth < 600 && window.innerHeight < 700) {
+      window.scrollTo({ top: window.innerHeight * 5.5, behavior: 'smooth' })
+    } else if (window.innerWidth < 600 && window.innerHeight > 700) {
+      window.scrollTo({ top: window.innerHeight * 5.5, behavior: 'smooth' })
+    } else {
+      window.scrollTo({ top: window.innerHeight * 4, behavior: 'smooth' })
+    }
+  }
+
+  openBurgerMenu() {
+    this.openBurger == false ? this.openBurger = true : this.openBurger = false;
   }
 }
+
+
+
+

@@ -3,13 +3,18 @@
         <div class="logo">RIEG</div>
     </div>
     <div class="header-right">
-        <div class="header-span-wrap" (click)="scrollAbout()"><span>About me</span></div>
-        <div class="header-span-wrap" (click)="scrollProjects()"><span>Projects</span></div>
-        <div class="header-span-wrap" (click)="scrollContact()"><span>Contact</span></div>
-        <div class="burger-menu">
+        <div class="header-span-wrap" (click)="scrollAbout()"><span class="header-span">About me</span></div>
+        <div class="header-span-wrap" (click)="scrollProjects()"><span class="header-span">Projects</span></div>
+        <div class="header-span-wrap" (click)="scrollContact()"><span class="header-span">Contact</span></div>
+        <div class="burger-menu" (click)="openBurgerMenu()">
             <div class="line-top"></div>
             <div class="line-middle"></div>
             <div class="line-bottom"></div>
+        </div>
+        <div class="burger-items" [class.open-burger]="openBurger">
+            <div class="burger-menu-item1" (click)="scrollAbout()"><span class="burger-span">About me</span></div>
+            <div class="burger-menu-item2" (click)="scrollProjects()"><span class="burger-span">Projects</span></div>
+            <div class="burger-menu-item3" (click)="scrollContact()"><span class="burger-span">Contact</span></div>
         </div>
     </div>
 </header>
