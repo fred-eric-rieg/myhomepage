@@ -36,6 +36,10 @@ export class HeaderComponent {
   openBurgerMenu() {
     this.openBurger == false ? this.openBurger = true : this.openBurger = false;
   }
+
+  closeBurgerMenu() {
+    this.openBurger = false;
+  }
 }
 
 

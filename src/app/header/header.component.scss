@@ -60,7 +60,7 @@
     transition: all 225ms ease-in-out;
     box-sizing: border-box;
     display: flex;
-    position: absolute;
+    position: fixed;
     flex-direction: column;
     right: -300px;
     top: 80px;
@@ -83,6 +83,7 @@
             background: #456990;
         }
     }
+
     .burger-menu-item2 {
         box-sizing: border-box;
         padding-left: 8px;
@@ -96,6 +97,7 @@
             background: #456990;
         }
     }
+
     .burger-menu-item3 {
         box-sizing: border-box;
         padding-left: 8px;
@@ -122,6 +124,29 @@
 .open-burger {
     transition: all 225ms ease-in-out;
     right: 0px !important;
+}
+
+.burger-close {
+    cursor: pointer;
+    user-select: none;
+    z-index: 3;
+    transition: all 225ms ease-in-out;
+    display: flex;
+    background: #456990;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    color: white;
+    position: fixed;
+    right: -300px;
+    top: 70px;
+}
+
+.close-burger {
+    transition: all 225ms ease-in-out;
+    right: 110px !important;
 }
 
 @media screen and (width > 1440px) {
