@@ -100,6 +100,11 @@
     }
 }
 
+.rotate {
+    transition: all 225ms ease-in-out;
+    background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #456990 6.25%, #456990 51.56%, #114B5F 100%);
+}
+
 @media screen and (width <= 1440px) {
     .blue-circle-big {
         transition: all 225ms ease-in-out;
@@ -121,6 +126,7 @@
         h2 {
             font-size: 48px;
             margin: unset;
+            width: unset;
         }
     }
 
