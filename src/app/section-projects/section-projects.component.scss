@@ -1,17 +1,21 @@
 .section-projects-background {
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     position: relative;
     top: 100vh;
     left: 0;
-    width: 100%;
+    width: calc(100% - 200px);
     height: 50vh;
+    margin-left: 100px;
+    margin-right: 100px;
 
     .wrapper {
-        margin-top: 100px;
-        margin-left: 100px;
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
 
         span {
             cursor: default;
@@ -25,21 +29,35 @@
             font-size: 32px;
             color: #456990;
         }
+    }
+}
 
-        @media screen and (width > 1440px) {
-            margin-left: 200px;
-        }
+/** Responsiveness media queries **/
+@media screen and (width > 1440px) {
+    .section-projects-background {
+        margin-left: 200px;
+        margin-right: 200px;
+        width: calc(100% - 400px);
+    }
+}
+
+@media screen and (width < 1200px) {
+    span {
+        margin-top: 50px;
+        text-align: center;
+        font-size: 56px !important;
     }
 
-    @media screen and (max-height: 800px) {
-        .wrapper {
-            span {
-                font-size: 64px;
-            }
+    p {
+        font-size: 24px !important;
+        text-align: center;
+    }
+}
 
-            p {
-                font-size: 32px;
-            }
-        }
+@media screen and (width < 600px) {
+    .section-projects-background {
+        margin-left: 50px;
+        margin-right: 50px;
+        width: calc(100% - 100px);
     }
 }
