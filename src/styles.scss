@@ -1,5 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+}
 body {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
     margin: 0;
     font-family: 'Optima', sans-serif;
     overflow-x: hidden !important;

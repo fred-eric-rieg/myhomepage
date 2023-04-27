@@ -22,10 +22,8 @@ export class HeaderComponent {
 
   scrollContact() {
     if (window.innerWidth < 600 && window.innerHeight < 700) {
-      console.log("if");
-      window.scrollTo({ top: window.innerHeight * 4.47, behavior: 'smooth' })
+      window.scrollTo({ top: window.innerHeight * 4.6, behavior: 'smooth' })
     } else {
-      console.log("else");
       window.scrollTo({ top: window.innerHeight * 4, behavior: 'smooth' })
     }
   }

@@ -11,6 +11,10 @@ export class SectionSkillsComponent {
   }
 
   scrollBottom() {
-    window.scrollTo({ top: 10000, behavior: 'smooth' })
+    if (window.innerWidth < 600 && window.innerHeight < 700) {
+      window.scrollTo({ top: window.innerHeight * 4.6, behavior: 'smooth' })
+    } else {
+      window.scrollTo({ top: window.innerHeight * 4, behavior: 'smooth' })
+    }
   }
 }

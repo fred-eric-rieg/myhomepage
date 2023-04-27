@@ -13,7 +13,6 @@ export class SectionTopComponent implements OnInit {
 
   constructor() { }
   ngOnInit(): void {
-    //this.height = "100vh";
   }
 
   /**
@@ -25,14 +24,6 @@ export class SectionTopComponent implements OnInit {
     let y = event.clientY;
     this.blueCircle.nativeElement.style.background = `radial-gradient(74.22% 74.22% at ${x}px ${y}px,  #456990 6.25%, #456990 51.56%, #114B5F 100%)`;
   }
-
-  //@HostBinding("style.--doc-height") height: string = '';
-
-  /**@HostListener('window:resize', ['$event'])
-  onWindowResize() {
-    this.getScreenWidth = window.innerWidth;
-    this.height = window.innerHeight.toString()+'px';
-  }**/
 }
 
 
