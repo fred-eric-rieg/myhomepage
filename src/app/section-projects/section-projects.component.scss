@@ -6,8 +6,7 @@
     top: 100vh;
     left: 0;
     width: calc(100% - 200px);
-    min-height: 50vh;
-    min-height: -webkit-fill-available;
+    height: 50vh;
     margin-left: 100px;
     margin-right: 100px;
 
@@ -60,6 +59,5 @@
         margin-left: 50px;
         margin-right: 50px;
         width: calc(100% - 100px);
-        height: 50vh !important;
     }
 }
