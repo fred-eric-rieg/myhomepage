@@ -7,8 +7,9 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
-    height: var(--doc-height);
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    //height: var(--doc-height);
     background: linear-gradient(179.99deg, #ffffff 12.89%, #EAF0FF 91.39%);
 }
 
@@ -144,7 +145,11 @@
     }
 
     .icons {
-        bottom: 50px;
+        bottom: 10%;
+
+        .image-wrap {
+            margin-bottom: 8px;
+        }
     }
 }
 
@@ -183,8 +188,8 @@
 
     .headline-text-box {
         transition: all 225ms ease-in-out;
-        left: 100px;
-        top: 250px;
+        left: 50px;
+        top: 260px;
 
         h1 {
             font-size: 42px;
@@ -199,5 +204,15 @@
 
     .icons {
         right: 50px;
+        bottom: 10%;
+
+        .image-wrap {
+            margin-bottom: 8px;
+        }
+
+        &:hover img {
+            transition: all 225ms ease-in-out;
+            transform: translateX(0px);
+        }
     }
 }

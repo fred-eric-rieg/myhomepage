@@ -5,7 +5,8 @@
     top: 100vh;
     left: 0;
     width: 100%;
-    height: 70vh;
+    min-height: 70vh;
+    min-height: -webkit-fill-available;
     background: linear-gradient(179.99deg, #ffffff 12.89%, #EAF0FF 91.39%);
     overflow-x: hidden !important;
 }
@@ -180,11 +181,13 @@
 @media screen and (width < 900px) {
     .left {
         width: calc(100% - 200px);
+
         .icon {
             position: absolute;
             margin: unset;
             right: 0;
             top: 32px;
+
             .tooltip {
                 left: -140px;
             }
@@ -200,7 +203,7 @@
         textarea {
             height: 100px;
         }
-        
+
         button {
             padding: 8px 25px;
             height: 40px;
@@ -230,10 +233,20 @@
         width: calc(100% - 50px);
     }
 
+    .tooltip {
+        font-size: 0;
+    }
+
     .right {
         margin-left: 50px;
         margin-right: 50px;
         width: calc(100% - 50px);
+        
+        .form {
+            gap: unset;
+            height: 100%;
+            justify-content: space-evenly !important;
+        }
     }
 }
 
@@ -241,6 +254,7 @@
     .contact-background {
         height: 100vh;
     }
+
     .icon {
         top: 16px !important;
         right: -56px !important;
@@ -251,6 +265,7 @@
     .contact-background {
         height: 100vh;
     }
+
     .icon {
         top: 16px !important;
         right: -56px !important;

@@ -217,6 +217,7 @@
 
 @media screen and (width < 600px) and (height < 800px) {
     .section-projects-background {
-        height: 100vh;
+        min-height: 100vh;
+        min-height: -webkit-fill-available;
     }
 }
