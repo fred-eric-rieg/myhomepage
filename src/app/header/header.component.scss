@@ -155,7 +155,71 @@
     
 }
 
-@media screen and (width < 1024px) {
+@media screen and (max-width: 1024px) {
+    .wrapper {
+        width: calc(min(100vw, 1024px) - 0rem);
+    }
+
+    .header-right {
+        max-width: calc(50% - 100px);
+
+        .header-span {
+            font-size: 0px !important;
+        }
+    }
+
+    .header-span-wrap {
+        width: 0px !important;
+    }
+
+    .burger-menu {
+        transition: all 225ms ease-in-out;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+
+        &:hover .line-top {
+            transition: all 225ms ease-in-out;
+            transform: translateX(-32px) translateY(24px) rotate(-180deg);
+        }
+
+        &:hover .line-middle {
+            transition: all 325ms ease-in-out;
+            transform: translateX(-32px) translateY(0px) rotate(-180deg);
+        }
+
+        &:hover .line-bottom {
+            transition: all 425ms ease-in-out;
+            transform: translateX(-32px) translateY(-24px) rotate(-180deg);
+        }
+    }
+
+    .line-top {
+        transition: all 225ms ease-in-out;
+        width: 32px;
+        height: 4px;
+        background-color: white;
+        margin: 4px 0;
+    }
+
+    .line-middle {
+        transition: all 325ms ease-in-out;
+        width: 32px;
+        height: 4px;
+        background-color: white;
+        margin: 4px 0;
+    }
+
+    .line-bottom {
+        transition: all 425ms ease-in-out;
+        width: 32px;
+        height: 4px;
+        background-color: white;
+        margin: 4px 0;
+    }
+}
+
+@media screen and (max-width < 1024px) {
     .wrapper {
         width: calc(min(100vw, 1024px) - 0rem);
     }

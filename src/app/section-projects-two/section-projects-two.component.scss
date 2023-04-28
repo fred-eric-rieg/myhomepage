@@ -93,8 +93,8 @@
 
 @media screen and (width < 1024px) {
     .box {
-        .img {
-            filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.15)) grayscale(0%);
+        img {
+            filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.15)) grayscale(0%) !important;
         }
     }
 }

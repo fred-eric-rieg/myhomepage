@@ -13,6 +13,7 @@ export class SectionTopComponent implements OnInit {
 
   constructor() { }
   ngOnInit(): void {
+    this.getScreenWidth = window.innerWidth;
   }
 
   /**
