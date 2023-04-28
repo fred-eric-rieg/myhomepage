@@ -1,12 +1,11 @@
 .footer {
+    box-sizing: border-box;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    justify-content: space-evenly;
-    position: relative;
-    top: 100vh;
-    left: 0;
-    width: 100%;
-    height: 30vh;
+    max-width: 100rem;
+    padding: 2rem 2rem;
     background: radial-gradient(71.18% 335.57% at 28.82% -124.4%, #E4FDE1 6.25%, #456990 51.56%, #114B5F 100%);
 }
 
@@ -14,10 +13,8 @@
     cursor: default;
     box-sizing: border-box;
     color: white;
-    font-size: 32px;
     font-weight: bold;
     width: 33%;
-    margin-left: 100px;
 }
 
 .middle {
@@ -37,7 +34,6 @@
     flex-direction: row;
     gap: 16px;
     width: 33%;
-    margin-right: 100px;
 
     .image-wrap {
         cursor: pointer;
@@ -58,10 +54,10 @@
 
     &:hover {
         transition: all 225ms ease-in-out;
-        font-size: 18px;
     }
 }
 
+/**
 @media screen and (width > 1440px) {
     .right {
         margin-right: 200px;
@@ -93,4 +89,4 @@
 
 @media screen and (width < 600px) and (height < 800px) {
 
-}
+}**/

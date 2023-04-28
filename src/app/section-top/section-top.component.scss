@@ -1,22 +1,29 @@
-:host {
+/*:host {
     height: var(--doc-height);
-}
+}*/
 
 .section-top-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
     height: 100vh;
     background: linear-gradient(179.99deg, #ffffff 12.89%, #EAF0FF 91.39%);
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/**
 .blue-circle-big {
+    overflow: hidden;
     transition: all 225ms ease-in-out;
     display: flex;
-    position: absolute;
-    top: -71px;
-    left: -220px;
+    transform: translateX(-70%) translateY(-70%);
     width: 892px;
     height: 892px;
     border-radius: 100%;
@@ -28,56 +35,28 @@
         width: 100%;
         height: 100%;
     }
-}
+}**/
 
 .headline-text-box {
+    display: grid;
     cursor: default;
-    position: absolute;
-    width: 645px;
-    left: 731px;
-    top: 227px;
+    user-select: none;
+    min-width: 100%;
 
-    h1 {
-        font-size: 128px;
+    .profession {
         color: #456990;
-        margin: 0;
+        font-weight: bold;
     }
 
-    h2 {
-        font-size: 64px;
+    .name {
         color: #456990;
-        width: max-content;
-        margin: 0;
         margin-bottom: 32px;
-    }
-}
-
-.vertical-line {
-    transition: all 225ms ease-in-out;
-    cursor: default;
-    position: absolute;
-    width: 0px;
-    height: 330px;
-    left: calc(50% - 1px);
-    bottom: 0px;
-    border: 2px solid #456990;
-
-    span {
-        position: relative;
-        top: -32px;
-        left: -44px;
-        font-size: 24px;
-        color: #456990;
-        font-weight: 500;
     }
 }
 
 .icons {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    right: 100px;
-    bottom: 100px;
 
     .image-wrap {
         cursor: pointer;
@@ -104,7 +83,7 @@
     }
 }
 
-/** Responsiveness media queries **/
+/** Responsiveness media queries
 @media screen and (width > 1440px) {
     .icons {
         right: 200px;
@@ -213,4 +192,4 @@
             transform: translateX(0px);
         }
     }
-}
+}**/

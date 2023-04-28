@@ -4,34 +4,16 @@
 }
 
 .section-projects-background {
-    box-sizing: border-box;
     display: flex;
-    flex-direction: row;
-    position: relative;
-    top: 100vh;
-    left: 0;
-    width: calc(100% - 200px);
-    height: 50vh;
-    margin-left: 100px;
-    margin-right: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
 
     .wrapper {
         display: flex;
         flex-direction: column;
-        width: 100%;
-
-        span {
-            cursor: default;
-            font-size: 128px;
-            font-weight: bold;
-            color: #456990;
-        }
-
-        p {
-            cursor: default;
-            font-size: 32px;
-            color: #456990;
-        }
     }
 }
 
@@ -52,31 +34,10 @@
         border: 2px solid #456990;
         filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.15)) grayscale(0%);
     }
-
-    &:hover .line {
-        width: calc(200%);
-        font-size: 16px;
-    }
-
-    .line {
-        transition: all 225ms ease-in-out;
-        position: relative;
-        justify-content: flex-end;
-        left: 0;
-        top: 5%;
-        display: flex;
-        height: 2px;
-        width: 2px;
-        font-size: 0px;
-        background: #456990;
-        color: #456990;
-    }
 }
 
 .magic-box {
-    margin-top: 42px;
     transition: all 225ms ease-in-out;
-    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,14 +45,12 @@
 
     span {
         cursor: default;
-        font-size: 32px !important;
         font-weight: bold;
         color: #456990;
     }
 
     p {
         cursor: default;
-        font-size: 24px !important;
         color: #456990;
     }
 
@@ -112,7 +71,6 @@
         border-radius: 10px;
         color: #456990;
 
-        font-size: 16px;
         align-items: center;
         justify-content: center;
         background: white;
@@ -130,6 +88,7 @@
     opacity: 1;
 }
 
+/**
 @media screen and (width > 1440px) {
     .section-projects-background {
         margin-left: 200px;
@@ -226,4 +185,4 @@
     .section-projects-background {
         height: 70vh;
     }
-}
+}**/
