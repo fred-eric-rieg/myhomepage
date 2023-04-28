@@ -20,6 +20,7 @@
     img {
         transition: all 225ms ease-in-out;
         box-sizing: border-box;
+        width: 100%;
         max-width: 400px;
         filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.15)) grayscale(100%);
     }

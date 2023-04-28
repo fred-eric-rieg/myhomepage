@@ -1,7 +1,9 @@
 main {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-width: 100vw;
+    max-width: 64rem;
+    margin: 0 auto;
 }

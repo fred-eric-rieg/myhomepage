@@ -12,17 +12,17 @@
     }
 }
 
+img {
+    transition: all 225ms ease-in-out;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 400px;
+    filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.15)) grayscale(100%);
+}
+
 .box {
     cursor: pointer;
     transition: all 225ms ease-in-out;
-    width: fit-content;
-
-    img {
-        transition: all 225ms ease-in-out;
-        box-sizing: border-box;
-        max-width: 400px;
-        filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.15)) grayscale(100%);
-    }
 
     &:hover img {
         transform: scale(1.1);

@@ -1,9 +1,8 @@
 .section-top-background {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background: linear-gradient(179.99deg, #ffffff 12.89%, #EAF0FF 91.39%);
 }
@@ -37,7 +36,6 @@
     display: grid;
     cursor: default;
     user-select: none;
-    min-width: 100%;
 
     .profession {
         color: #456990;
@@ -46,7 +44,6 @@
 
     .name {
         color: #456990;
-        margin-bottom: 32px;
     }
 }
 
@@ -58,9 +55,6 @@
         cursor: pointer;
         display: flex;
         justify-content: flex-end;
-        width: 100px;
-        height: 32px;
-        margin-bottom: 16px;
 
         img {
             transition: all 225ms ease-in-out;

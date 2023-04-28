@@ -9,17 +9,14 @@
 }
 
 .wrapper {
-    width: 100%;
+    display: block;
     height: 50%;
-    display: flex;
-    flex-direction: row;
 }
 
 .headline {
     box-sizing: border-box;
     cursor: default;
     display: flex;
-    width: 50%;
     align-items: center;
     justify-content: center;
 
@@ -35,7 +32,6 @@
     box-sizing: border-box;
     cursor: default;
     display: flex;
-    width: 50%;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -68,9 +64,9 @@
 }
 
 .skills-wrapper {
+    display: flex;
     width: 100%;
     height: 50%;
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;

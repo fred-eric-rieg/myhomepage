@@ -1,9 +1,11 @@
 .header {
     box-sizing: border-box;
     display: flex;
+    position: fixed;
+    top: 0;
     justify-content: center;
     justify-content: space-between;
-    max-width: 100rem;
+    max-width: 64rem;
     padding: 1rem 1rem;
     z-index: 1;
     background: #456990;
