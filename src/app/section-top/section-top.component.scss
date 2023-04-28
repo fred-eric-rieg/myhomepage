@@ -3,9 +3,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 64rem;
-    width: calc(min(100vw, 64rem));
-    height: calc(100vh - 4em);
+    max-width: 1024px;
+    width: calc(min(100vw, 1024px));
+    height: calc(100vh - 4rem);
     background: linear-gradient(179.99deg, #ffffff 12.89%, #EAF0FF 91.39%);
 }
 

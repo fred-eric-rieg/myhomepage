@@ -3,13 +3,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 64rem;
-    width: calc(min(100vw, 64rem) - 0rem);
+    max-width: 1024px;
+    width: calc(min(100vw, 1024px) - 0rem);
     margin: 0 auto;
 
     .wrapper {
-        max-width: 64rem;
-        width: calc(min(100vw, 64rem) - 4rem);
+        max-width: 1024px;
+        width: calc(min(100vw, 1024px) - 4rem);
         display: flex;
         flex-direction: column;
     }
@@ -91,7 +91,7 @@
     opacity: 1;
 }
 
-@media screen and (width < 64rem) {
+@media screen and (width < 1024px) {
     .box {
         .img {
             filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.15)) grayscale(0%);

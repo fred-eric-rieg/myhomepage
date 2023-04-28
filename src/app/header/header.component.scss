@@ -12,8 +12,8 @@
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    max-width: 64rem;
-    width: calc(min(100vw, 64rem) - 4rem);
+    max-width: 1024px;
+    width: calc(min(100vw, 1024px) - 4rem);
     height: 100%;
 
     .header-right {
@@ -155,9 +155,9 @@
     
 }
 
-@media screen and (width < 64rem) {
+@media screen and (width < 1024px) {
     .wrapper {
-        width: calc(min(100vw, 64rem) - 0rem);
+        width: calc(min(100vw, 1024px) - 0rem);
     }
 
     .header-right {
