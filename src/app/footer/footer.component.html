@@ -8,4 +8,8 @@
         <a class="image-wrap" href="https://github.com/FredVomJupiter" target="_blank"><img src="assets/img/github_negative.svg" alt="git"></a>
         <a class="image-wrap" href="https://www.linkedin.com/in/frederic-r-6a2251101/" target="_blank"><img src="assets/img/linkedin_negative.svg" alt="linkedin"></a>
     </div>
+    <div class="icon" [class.show-icon]="showScrollToTop">
+        <img src="assets/img/up.svg" alt="up" (click)="scrollTop()">
+        <span class="tooltip">Scroll to top</span>
+    </div>
 </div>

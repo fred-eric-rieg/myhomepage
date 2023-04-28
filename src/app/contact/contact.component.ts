@@ -6,11 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
-  constructor() {
 
-  }
-
-  scrollTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  }
 }
