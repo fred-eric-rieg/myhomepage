@@ -3,19 +3,19 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: fit-content;
     width: 100%;
-    height: calc(100vh - 4rem);
     margin: 0 auto;
 }
 
 .wrapper {
+    padding: 32px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     max-width: 64rem;
     width: calc(min(100vw, 64rem) - 4rem);
-    height: 50%;
 
     .headline {
         box-sizing: border-box;
@@ -71,11 +71,11 @@
 }
 
 .skills-wrapper {
+    padding: 32px 0px;
     display: flex;
     max-width: 64rem;
     min-width: 350px;
     width: calc(min(100vw, 64rem));
-    height: 50%;
     flex-direction: column;
     align-items: center;
     justify-content: center;

@@ -21,6 +21,7 @@
     transition: all 225ms ease-in-out;
     align-self: center;
     justify-content: center;
+    padding: 2rem 0;
 
     img {
         transition: all 225ms ease-in-out;
@@ -41,7 +42,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    margin: 2rem 0rem;
+    padding: 2rem 0 4rem 0; // top right bottom left: needs extra padding on bottom to match the others!
     font-size: 16px;
 
     span {
