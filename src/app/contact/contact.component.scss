@@ -47,6 +47,7 @@
     }
 
     .darkblue {
+        margin-left: 8px;
         cursor: default;
         color: #114B5F;
         font-weight: bold;
@@ -133,110 +134,3 @@
         }
     }
 }
-
-/**
-@media screen and (width > 1440px) {
-    .left {
-        margin-left: 200px;
-    }
-
-    .right {
-        margin-right: 200px;
-    }
-}
-
-@media screen and (width < 1200px) {}
-
-@media screen and (width < 900px) {
-    .left {
-        width: calc(100% - 200px);
-
-        .icon {
-            position: absolute;
-            margin: unset;
-            right: 0;
-            top: 32px;
-
-            .tooltip {
-                left: -140px;
-            }
-        }
-    }
-
-    .right {
-        width: calc(100% - 200px);
-        margin-left: 100px;
-        margin-top: 16px;
-        margin-bottom: 16px;
-
-        textarea {
-            height: 100px;
-        }
-
-        button {
-            padding: 8px 25px;
-            height: 40px;
-        }
-    }
-
-    .contact-background {
-        flex-direction: column;
-    }
-}
-
-@media screen and (width < 900px) and (height < 600px) {
-    .contact-background {
-        height: 100vh;
-    }
-}
-
-@media screen and (width < 600px) {
-    .contact-background {
-        align-items: center;
-        justify-content: center;
-    }
-
-    .left {
-        margin-left: 50px;
-        margin-right: 50px;
-        width: calc(100% - 50px);
-    }
-
-    .tooltip {
-        font-size: 0;
-    }
-
-    .right {
-        margin-left: 50px;
-        margin-right: 50px;
-        width: calc(100% - 50px);
-        
-        .form {
-            gap: unset;
-            height: 100%;
-            justify-content: space-evenly !important;
-        }
-    }
-}
-
-@media screen and (width < 600px) and (height < 700px) {
-    .contact-background {
-        height: 100vh;
-    }
-
-    .icon {
-        top: 16px !important;
-        right: -56px !important;
-    }
-}
-
-@media screen and (width < 600px) and (height < 900px) {
-    .contact-background {
-        height: 100vh;
-    }
-
-    .icon {
-        top: 16px !important;
-        right: -56px !important;
-    }
-}**/

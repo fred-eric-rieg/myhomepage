@@ -90,3 +90,11 @@
     transition: all 225ms ease-in-out;
     opacity: 1;
 }
+
+@media screen and (width < 64rem) {
+    .box {
+        .img {
+            filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.15)) grayscale(0%);
+        }
+    }
+}
