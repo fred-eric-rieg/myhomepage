@@ -56,37 +56,3 @@
         transition: all 225ms ease-in-out;
     }
 }
-
-/**
-@media screen and (width > 1440px) {
-    .right {
-        margin-right: 200px;
-    }
-    .logo {
-        margin-left: 200px;
-    }
-}
-
-@media screen and (width < 600px) {
-    .right {
-        width: 25%;
-        flex-direction: column;
-        align-items: flex-end;
-        justify-content: flex-start;
-        margin-right: 50px;
-    }
-    .middle {
-        margin-left: 16px;
-        font-size: 12px;
-        width: 50%;
-
-    }
-    .logo {
-        width: 25%;
-        margin-left: 50px;
-    }
-}
-
-@media screen and (width < 600px) and (height < 800px) {
-
-}**/

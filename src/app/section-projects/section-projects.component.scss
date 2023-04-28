@@ -24,33 +24,3 @@
         }
     }
 }
-
-/** Responsiveness media queries
-@media screen and (width > 1440px) {
-    .section-projects-background {
-        margin-left: 200px;
-        margin-right: 200px;
-        width: calc(100% - 400px);
-    }
-}
-
-@media screen and (width < 1200px) {
-    span {
-        margin-top: 50px;
-        text-align: center;
-        font-size: 56px !important;
-    }
-
-    p {
-        font-size: 24px !important;
-        text-align: center;
-    }
-}
-
-@media screen and (width < 600px) {
-    .section-projects-background {
-        margin-left: 50px;
-        margin-right: 50px;
-        width: calc(100% - 100px);
-    }
-}**/
