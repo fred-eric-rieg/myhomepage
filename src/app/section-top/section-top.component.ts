@@ -9,12 +9,16 @@ export class SectionTopComponent {
   start: number = 0;
   now: number = 0;
   t: number = 0;
+  turning: boolean = false;
 
   constructor() { }
 
   getElement(event: any) {
-    this.start = new Date().getTime();
-    this.turnSmall(event);
+    if (!this.turning) {
+      this.start = new Date().getTime();
+      this.turning = true;
+      this.turnSmall(event);
+    }
   }
 
   /**

@@ -13,22 +13,18 @@ export class HeaderComponent {
   }
 
   scrollAbout() {
-    console.log("scrolling");
-    window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })
+    const element = document.getElementById("about");
+    element!.scrollIntoView({behavior: 'smooth'});
   }
 
   scrollProjects() {
-    console.log("scrolling");
-    window.scrollTo({ top: window.innerHeight * 2, behavior: 'smooth' })
+    const element = document.getElementById("projects");
+    element!.scrollIntoView({behavior: 'smooth'});
   }
 
   scrollContact() {
-    console.log("scrolling");
-    if (window.innerWidth < 600 && window.innerHeight < 700) {
-      window.scrollTo({ top: window.innerHeight * 4.6, behavior: 'smooth' })
-    } else {
-      window.scrollTo({ top: window.innerHeight * 4, behavior: 'smooth' })
-    }
+    const element = document.getElementById("contact");
+    element!.scrollIntoView({behavior: 'smooth'});
   }
 
   openBurgerMenu() {
