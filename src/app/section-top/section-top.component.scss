@@ -57,3 +57,10 @@
         }
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .icons {
+        left: calc(50% - 5rem);
+        top: calc(50% - 6.5rem);
+    }
+}

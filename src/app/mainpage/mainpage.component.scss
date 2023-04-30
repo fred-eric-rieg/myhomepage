@@ -1,9 +1,38 @@
 main {
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     max-width: 1024px;
     margin: 0 auto;
     padding: 0 2rem;
+}
+
+.big-blue-circle {
+    z-index: 3;
+    position: absolute;
+    left: calc(50% - 150px);
+    top: calc(100vh - 20rem - 300px);
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    //background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #E4FDE1 6.25%, #456990 51.56%, #114B5F 100%);
+    background-image: url('/assets/img/earth.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.small-blue-circle {
+    z-index: 4;
+    position: absolute;
+    left: calc(50% - 250px);
+    top: calc(100vh - 20rem - 200px);
+    width: 100px;
+    height: 100px;
+    shape-outside: circle(50%);
+    clip-path: circle(50%);
+    background: radial-gradient(74.22% 74.22% at 19.79% 22.42%, #E4FDE1 6.25%, #456990 51.56%, #114B5F 100%);
+    background-image: url('/assets/img/moon.jpg');
+    background-position: center;
+    background-size: cover;
 }
