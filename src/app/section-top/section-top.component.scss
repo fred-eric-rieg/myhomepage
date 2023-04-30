@@ -1,12 +1,13 @@
 .section-top-background {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 1024px;
     width: calc(min(100vw, 1024px));
     height: calc(100vh - 4rem);
-    background: linear-gradient(179.99deg, #ffffff 12.89%, #EAF0FF 91.39%);
+    //background: linear-gradient(179.99deg, #ffffff 12.89%, #EAF0FF 91.39%);
+    background: black;
 }
 
 .headline-text-box {
@@ -58,7 +59,57 @@
     }
 }
 
+
+.big-blue-circle {
+    z-index: 3;
+    transform: translateY(200px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    background-image: url('/assets/img/earth.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.small-blue-circle {
+    z-index: 4;
+    position: absolute;
+    transform: translateY(200px);
+    top: 0;
+    left: -500px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    shape-outside: circle(50%);
+    clip-path: circle(50%);
+    background-image: url('/assets/img/moon.png');
+    background-position: center;
+    background-size: cover;
+}
+
 @media screen and (max-width: 1024px) {
+    .big-blue-circle {
+        transform: translateY(100px);
+        width: 150px;
+        height: 150px;
+    }
+
+    .small-blue-circle {
+        transform: translateY(100px);
+        left: -250px;
+        width: 50px;
+        height: 50px;
+    }
+
     .icons {
         left: calc(50% - 5rem);
         top: calc(50% - 6.5rem);
