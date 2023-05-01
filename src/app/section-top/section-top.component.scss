@@ -10,24 +10,6 @@
     background: black;
 }
 
-.headline-text-box {
-    z-index: 1;
-    display: grid;
-    cursor: default;
-    user-select: none;
-
-    .profession {
-        color: #456990;
-        font-weight: bold;
-        font-size: 2rem;
-    }
-
-    .name {
-        color: #456990;
-        font-size: 1.5rem;
-    }
-}
-
 .icons {
     position: relative;
     left: calc(50% - 3rem);
@@ -59,58 +41,178 @@
     }
 }
 
-.big-blue-circle {
-    z-index: 3;
-    transform: translateY(200px);
+// Took me some hours to figure this out but it was worth it!
+// Basically every p in every column gets a slightly different animation-delay and one animation.
+.matrix-name {
     position: absolute;
-    top: 0;
-    left: 0;
+    overflow: hidden;
+    left: 4rem;
+    bottom: 4rem;
     right: 0;
-    bottom: 0;
-    margin: auto;
-    width: 300px;
-    height: 300px;
-    border-radius: 100%;
-    background-image: url('/assets/img/earth.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+    display: flex;
+    flex-direction: row;
+
+    p {
+        margin: 0;
+        gap: 2px;
+        color: rgb(124, 173, 224);
+        font-size: 24px;
+        animation: matrix 5s infinite;
+    }
 }
 
-.small-blue-circle {
-    z-index: 4;
+.matrix {
     position: absolute;
-    transform: translateY(200px);
-    top: 0;
-    left: -500px;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    width: 100px;
-    height: 100px;
-    shape-outside: circle(50%);
-    clip-path: circle(50%);
-    background-image: url('/assets/img/moon.png');
-    background-position: center;
-    background-size: cover;
+    overflow: hidden;
+    top: 4rem;
+    left: 2rem;
+    max-width: fit-content;
+    max-height: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    //transform: rotate3d(0, 1, 0, 60deg);
+
+    .column {
+        display: flex;
+        flex-direction: column;
+
+        p {
+            margin: 0;
+            color: rgb(124, 173, 224);
+            font-size: 24px;
+            animation: matrix 5s infinite;
+        }
+    }
+}
+
+.matrix-two {
+    position: absolute;
+    overflow: hidden;
+    top: 10rem;
+    left: 16rem;
+    max-width: fit-content;
+    max-height: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    //transform: rotate3d(0, 1, 0, 60deg);
+
+    .column {
+        display: flex;
+        flex-direction: column;
+
+        p {
+            margin: 0;
+            color: rgb(124, 173, 224);
+            font-size: 14px;
+            animation: matrixgreen 5s infinite;
+        }
+    }
+}
+
+.matrix-three {
+    position: absolute;
+    overflow: hidden;
+    top: 20rem;
+    left: 28rem;
+    max-width: fit-content;
+    max-height: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    //transform: rotate3d(0, 1, 0, 60deg);
+
+    .column {
+        display: flex;
+        flex-direction: column;
+
+        p {
+            margin: 0;
+            color: rgb(124, 173, 224);
+            font-size: 18px;
+            animation: matrix 5s infinite;
+        }
+    }
+}
+
+@keyframes matrix {
+    0% {
+        opacity: 1;
+        color: rgb(144, 172, 238);
+    }
+    70% {
+        opacity: 1;
+        color: rgb(124, 173, 224);
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes matrixgreen {
+    0% {
+        opacity: 1;
+        color: lightgreen;
+    }
+    70% {
+        opacity: 1;
+        color: rgb(6, 161, 6);;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 @media screen and (max-width: 1024px) {
-    .big-blue-circle {
-        transform: translateY(100px);
-        width: 150px;
-        height: 150px;
-    }
-
-    .small-blue-circle {
-        transform: translateY(100px);
-        left: -250px;
-        width: 50px;
-        height: 50px;
-    }
-
     .icons {
         left: calc(50% - 5rem);
         top: calc(50% - 6.5rem);
+    }
+}
+
+@media screen and (width < 700px) {
+    .matrix-name {
+        bottom: 2rem;
+        p {
+            font-size: 14px;
+        }
+    }
+
+    .matrix {
+        top: 46px;
+        left: 2rem;
+        margin: 0;
+        p {
+            font-size: 0.8rem !important;
+        }
+    }
+
+    .matrix-two {
+        top: 10rem;
+        left: 6rem;
+        margin: 0;
+        p {
+            font-size: 0.5rem !important;
+        }
+    }
+
+    .matrix-three {
+        top: 2rem;
+        left: 12rem;
+        margin: 0;
+        p {
+            font-size: 0.7rem !important;
+        }
+    }
+}
+
+@media screen and (height < 1024px) {
+    .matrix {
+        max-height: 80vh;
+    }
+
+    .matix-three {
+        max-height: 400px;
     }
 }
