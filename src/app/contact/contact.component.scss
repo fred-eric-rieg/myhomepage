@@ -137,23 +137,26 @@
 }
 
 .message {
+    cursor: default;
     transition: all 225ms ease-in-out;
     position: absolute;
     right: -100%;
-    top: 20%;
+    top: 60%;
     width: 200px;
     height: 50px;
     padding: 0 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #114B5F;
+    color: white;
     border: 2px solid #114B5F;
+    background: #114B5F;
     border-radius: 10px;
-    background: white;
+    user-select: none;
+    -webkit-user-select: none;
 }
 
 .show-message {
     transition: all 225ms ease-in-out;
-    right: calc(50% - 100px);
+    right: calc(50% - 100px - 1rem);
 }
