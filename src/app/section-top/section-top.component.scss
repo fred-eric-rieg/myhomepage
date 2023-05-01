@@ -55,9 +55,9 @@
     p {
         margin: 0;
         gap: 2px;
-        color: rgb(124, 173, 224);
+        color: #E4FDE1;
         font-size: 24px;
-        animation: matrix 5s infinite;
+        animation: matrixblue 5s infinite;
     }
 }
 
@@ -164,18 +164,34 @@
     }
 }
 
+@keyframes matrixblue {
+    0% {
+        opacity: 1;
+        color: white;
+    }
+    70% {
+        opacity: 1;
+        color: #E4FDE1;
+    }
+    100% {
+        opacity: 0;
+    }
+} 
+
 @media screen and (max-width: 1024px) {
     .icons {
-        left: calc(50% - 5rem);
+        left: calc(50% - 3rem);
         top: calc(50% - 6.5rem);
     }
 }
 
 @media screen and (width < 700px) {
     .matrix-name {
+        z-index: 15;
         bottom: 2rem;
+        left: 2rem;
         p {
-            font-size: 14px;
+            font-size: 16px;
         }
     }
 
@@ -183,6 +199,7 @@
         top: 46px;
         left: 2rem;
         margin: 0;
+        max-height: 80vh;
         p {
             font-size: 0.8rem !important;
         }
@@ -201,18 +218,9 @@
         top: 2rem;
         left: 12rem;
         margin: 0;
+        max-height: 80vh;
         p {
             font-size: 0.7rem !important;
         }
-    }
-}
-
-@media screen and (height < 1024px) {
-    .matrix {
-        max-height: 80vh;
-    }
-
-    .matix-three {
-        max-height: 400px;
     }
 }

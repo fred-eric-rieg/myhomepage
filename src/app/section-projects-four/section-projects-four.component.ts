@@ -40,7 +40,7 @@ export class SectionProjectsFourComponent {
     setInterval(() => {
       this.now = new Date().getTime();
       if (this.t <= 2 * Math.PI) {
-        this.t += Math.PI / 200;
+        this.t += Math.PI / 120;
         if (window.innerWidth < 1024) {
            // Creating a seperate radius for mobile devices
           moon.style.left = `calc(-100px * ${Math.cos(this.t)})`;
