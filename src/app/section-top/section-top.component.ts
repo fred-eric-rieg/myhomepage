@@ -13,12 +13,8 @@ export class SectionTopComponent {
 
   constructor() { }
 
-  getElement(event: any) {
-    if (!this.turning) {
-      this.start = new Date().getTime();
-      this.turning = true;
-      this.turnSmall(event);
-    }
+  ngOnInit(): void {
+    this.turnSmall(document.getElementById('small'));
   }
 
   /**
@@ -27,27 +23,27 @@ export class SectionTopComponent {
    * looks like the moon circulation around the earth. In addition, the z-index of the moon is set lower than
    * the earths as soon as t (0 <= t <= 2 pi) is greater Pi, thus creating the illusion of the moon moving
    * behind the earth each half circulation phase.
-   * @param event as click event.
+   * @param moon as DOM element.
    */
-  turnSmall(event: any) {
+  turnSmall(moon: any) {
     setInterval(() => {
       this.now = new Date().getTime();
       if (this.t <= 2 * Math.PI) {
         this.t += Math.PI / 60;
         if (window.innerWidth < 600) { // Creating a seperate radius for mobile devices
-          event.target.style.left = `calc(-250px * ${Math.cos(this.t)})`;
-          event.target.style.top = `calc(-50px * ${Math.sin(this.t)})`;
+          moon.style.left = `calc(-250px * ${Math.cos(this.t)})`;
+          moon.style.top = `calc(-50px * ${Math.sin(this.t)})`;
         } else {
-          event.target.style.left = `calc(-500px * ${Math.cos(this.t)})`;
-          event.target.style.top = `calc(-100px * ${Math.sin(this.t)})`;
+          moon.style.left = `calc(-500px * ${Math.cos(this.t)})`;
+          moon.style.top = `calc(-100px * ${Math.sin(this.t)})`;
         }
       } else {
         this.t = 0; // Reseting the circulation phase
       }
       if (this.t < Math.PI) {
-        event.target.style.zIndex = '1';
+        moon.style.zIndex = '1';
       } else {
-        event.target.style.zIndex = '4';
+        moon.style.zIndex = '4';
       }
     }, 1000 / 60); // Ensuring 60 frames per second
   }
