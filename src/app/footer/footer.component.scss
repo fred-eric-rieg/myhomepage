@@ -1,4 +1,5 @@
 .footer {
+    position: relative;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -65,12 +66,11 @@
     box-sizing: border-box;
     position: absolute;
     bottom: 7rem;
-    left: 8px;
+    left: 2rem;
     cursor: pointer;
     display: flex;
     max-width: 200px;
     z-index: 5;
-    opacity: 0;
 
     .img {
         width: 32px;
@@ -80,10 +80,11 @@
         transition: all 225ms ease-in-out;
         opacity: 0;
         position: relative;
-        max-width: 100px;
+        max-width: 80px;
+        height: 20px;
         top: 10px;
         left: 10px;
-        font-size: 14px;
+        font-size: 12px;
         color: #114B5F;
     }
 
@@ -100,11 +101,4 @@
 
 .show-icon {
     transition: all 225ms ease-in-out;
-    opacity: 1;
-}
-
-@media screen and (width > 64rem) {
-    .icon {
-        left: calc(50% - 16px);
-    }
 }

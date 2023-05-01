@@ -15,6 +15,8 @@ import { SectionProjectsThreeComponent } from './section-projects-three/section-
 import { SectionProjectsOneComponent } from './section-projects-one/section-projects-one.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { SectionProjectsFourComponent } from './section-projects-four/section-projects-four.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,11 +32,13 @@ import { FooterComponent } from './footer/footer.component';
     SectionProjectsThreeComponent,
     SectionProjectsOneComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    SectionProjectsFourComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

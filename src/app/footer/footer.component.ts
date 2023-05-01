@@ -13,7 +13,7 @@ export class FooterComponent {
   }
 
   scrollTop() {
-    console.log('scrolling to top')
-    window.scrollTo({ top: 100, behavior: 'smooth' })
+    const element = document.getElementById("top");
+    element!.scrollIntoView({behavior: 'smooth'});
   }
 }
