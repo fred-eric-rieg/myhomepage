@@ -16,6 +16,7 @@ export class SectionProjectsFourComponent {
   chinese: string[] = '欢迎你! 我是弗雷德里克-里格'.split('');
   name: string[] = 'Frederic Rieg:'.split('');
   profession: string[] = 'Frontend Developer'.split('');
+  
   showBox: boolean = false;
   start: number = 0;
   now: number = 0;
@@ -35,7 +36,7 @@ export class SectionProjectsFourComponent {
   }
 
   ngOnInit(): void {
-    this.turnSmall(document.getElementById('small'));
+    //this.turnSmall(document.getElementById('moon'));
   }
 
   /**

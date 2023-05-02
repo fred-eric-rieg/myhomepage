@@ -62,31 +62,6 @@
     }
 }
 
-.matrix {
-    position: absolute;
-    top: 4rem;
-    left: 2rem;
-    max-width: fit-content;
-    max-height: fit-content;
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    //transform: rotate3d(0, 1, 0, 60deg);
-
-    .column {
-        display: flex;
-        flex-direction: column;
-
-        p {
-            margin: 0;
-            color: rgb(124, 173, 224);
-            font-size: 24px;
-            animation: matrix 3s infinite;
-            opacity: 0;
-        }
-    }
-}
-
 .matrix-two {
     position: absolute;
     top: 2rem;
@@ -113,45 +88,6 @@
     }
 }
 
-.matrix-three {
-    position: absolute;
-    top: 8rem;
-    left: 28rem;
-    max-width: fit-content;
-    max-height: fit-content;
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-    //transform: rotate3d(0, 1, 0, 60deg);
-
-    .column {
-        display: flex;
-        flex-direction: column;
-
-        p {
-            margin: 0;
-            color: rgb(124, 173, 224);
-            font-size: 18px;
-            animation: matrix 3s infinite;
-            opacity: 0;
-        }
-    }
-}
-
-@keyframes matrix {
-    0% {
-        opacity: 1;
-        color: rgb(144, 172, 238);
-    }
-    70% {
-        opacity: 1;
-        color: rgb(124, 173, 224);
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
 @keyframes matrixgreen {
     0% {
         opacity: 1;
@@ -166,20 +102,6 @@
     }
 }
 
-@keyframes matrixblue {
-    0% {
-        opacity: 0;
-        color: white;
-    }
-    70% {
-        opacity: 0;
-        color: #E4FDE1;
-    }
-    100% {
-        opacity: 1;
-    }
-} 
-
 @media screen and (max-width: 1024px) {
     .icons {
         left: calc(50% - 3rem);
@@ -193,17 +115,8 @@
         bottom: 2rem;
         left: 2rem;
         p {
-            font-size: 16px;
-        }
-    }
-
-    .matrix {
-        top: 46px;
-        left: 2rem;
-        margin: 0;
-        max-height: 80vh;
-        p {
-            font-size: 0.6rem !important;
+            font-size: 1rem;
+            font-weight: bold;
         }
     }
 
@@ -212,37 +125,15 @@
         left: 6rem;
         margin: 0;
         p {
-            font-size: 0.8rem !important;
-        }
-    }
-
-    .matrix-three {
-        top: 2rem;
-        left: 12rem;
-        margin: 0;
-        max-height: 80vh;
-        p {
-            font-size: 0.5rem !important;
+            font-size: 0.6rem !important;
         }
     }
 }
 
 @media screen and (height < 1024px) {
-    .matrix {
-        p {
-            font-size: 0.8rem;
-        }
-    }
-
     .matrix-two {
         p {
             font-size: 0.5rem;
-        }
-    }
-
-    .matrix-three {
-        p {
-            font-size: 0.7rem;
         }
     }
 }

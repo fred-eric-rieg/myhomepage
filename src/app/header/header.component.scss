@@ -1,8 +1,8 @@
 .header {
-    box-sizing: border-box;
+    position: relative;
     display: flex;
     height: 4rem;
-    padding: 2rem 2rem;
+    padding: 0rem 2rem;
     z-index: 1;
     background: linear-gradient(128.94deg, #9ac1ec -33.96%, #456990 36.71%, #114B5F 112.25%);
 }
