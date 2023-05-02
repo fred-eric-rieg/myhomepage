@@ -48,7 +48,6 @@
     position: absolute;
     left: 4rem;
     bottom: 4rem;
-    right: 0;
     display: flex;
     align-items: flex-end;
     flex-direction: row;
@@ -58,7 +57,7 @@
     p {
         margin: 0;
         color: #456990;
-        font-size: 24px;
+        font-size: 2rem;
     }
 }
 
@@ -112,7 +111,7 @@
 @media screen and (width < 700px) {
     .matrix-name {
         z-index: 15;
-        bottom: 2rem;
+        top: 0rem;
         left: 2rem;
         p {
             font-size: 1rem;
@@ -121,8 +120,8 @@
     }
 
     .matrix-two {
-        top: 1rem;
-        left: 6rem;
+        top: 4rem;
+        left: 2rem;
         margin: 0;
         p {
             font-size: 0.6rem !important;
