@@ -4,14 +4,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    top: 0;
-    left: 0;
     max-width: 1024px;
     height: 100vh;
     margin: 0 auto;
+    padding: 2rem 0;
     background: white;
-    user-select: none;
-    -webkit-user-select: none;
 }
 
 .btn {
@@ -23,10 +20,20 @@
     padding: 15px 25px;
     border-radius: 10px;
     color: #114B5F;
+    user-select: none;
+    -webkit-user-select: none;
 
     &:hover {
         transition: all 225ms ease-in-out;
         background-color: #114B5F;
         color: white;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .imprint-background {
+        h2 {
+            font-size: 1rem;
+        }
     }
 }
