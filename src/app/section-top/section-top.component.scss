@@ -45,6 +45,7 @@
 // Took me some hours to figure this out but it was worth it!
 // Basically every p in every column gets a slightly different animation-delay and one animation.
 .matrix-name {
+    z-index: 5;
     position: absolute;
     left: 4rem;
     bottom: 4rem;
@@ -58,10 +59,8 @@
 
     p {
         margin: 0;
-        gap: 2px;
         color: #E4FDE1;
         font-size: 24px;
-        animation: matrixblue 5s infinite;
     }
 }
 
@@ -170,15 +169,15 @@
 
 @keyframes matrixblue {
     0% {
-        opacity: 1;
+        opacity: 0;
         color: white;
     }
     70% {
-        opacity: 1;
+        opacity: 0;
         color: #E4FDE1;
     }
     100% {
-        opacity: 0;
+        opacity: 1;
     }
 } 
 
