@@ -1,14 +1,19 @@
 .footer {
-    position: relative;
     box-sizing: border-box;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    z-index: 1;
+    background: #293133;
+}
+
+.wrapper {
+    position: relative;
+    display: flex;
     align-items: center;
-    max-width: 1024px;
+    justify-content: space-between;
     margin: 0 auto;
-    padding: 2rem 2rem;
-    background: radial-gradient(71.18% 335.57% at 28.82% -124.4%, #E4FDE1 6.25%, #456990 51.56%, #114B5F 100%);
+    max-width: 1024px;
+    width: calc(min(100vw, 1024px) - 4rem);
+    height: 8rem;
 }
 
 .logo {
@@ -65,8 +70,8 @@
     transition: all 225ms ease-in-out;
     box-sizing: border-box;
     position: absolute;
-    bottom: 7rem;
-    left: 2rem;
+    bottom: 10rem;
+    left: 0rem;
     cursor: pointer;
     display: flex;
     max-width: 200px;
@@ -85,7 +90,7 @@
         top: 10px;
         left: 10px;
         font-size: 12px;
-        color: #114B5F;
+        color: #293133;
     }
 
     &:hover {

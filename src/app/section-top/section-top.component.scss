@@ -8,7 +8,6 @@
     width: calc(min(100vw, 1024px));
     height: calc(100vh - 4rem);
     //background: linear-gradient(179.99deg, #ffffff 12.89%, #EAF0FF 91.39%);
-    background: black;
 }
 
 .icons {
@@ -53,13 +52,12 @@
     display: flex;
     align-items: flex-end;
     flex-direction: row;
-    background: black;
     height: 40px;
     width: fit-content;
 
     p {
         margin: 0;
-        color: #E4FDE1;
+        color: #456990;
         font-size: 24px;
     }
 }
@@ -91,8 +89,8 @@
 
 .matrix-two {
     position: absolute;
-    top: 10rem;
-    left: 16rem;
+    top: 2rem;
+    left: 32rem;
     max-width: fit-content;
     max-height: fit-content;
     display: flex;
@@ -103,13 +101,14 @@
     .column {
         display: flex;
         flex-direction: column;
+        gap: 1px;
 
         p {
             margin: 0;
-            color: rgb(124, 173, 224);
-            font-size: 14px;
+            color: rgb(6, 161, 6);
+            font-size: 1.1rem;
             animation: matrixgreen 3s infinite;
-            opacity: 0;
+            opacity: 1;
         }
     }
 }
@@ -156,7 +155,7 @@
 @keyframes matrixgreen {
     0% {
         opacity: 1;
-        color: lightgreen;
+        color: black;
     }
     70% {
         opacity: 1;
@@ -209,11 +208,11 @@
     }
 
     .matrix-two {
-        top: 10rem;
+        top: 1rem;
         left: 6rem;
         margin: 0;
         p {
-            font-size: 0.4rem !important;
+            font-size: 0.8rem !important;
         }
     }
 
@@ -244,6 +243,16 @@
     .matrix-three {
         p {
             font-size: 0.7rem;
+        }
+    }
+}
+
+@media screen and (width > 1440px) {
+    .matrix-two {
+        .column {
+            p {
+                font-size: 1.5rem;
+            }
         }
     }
 }

@@ -28,7 +28,7 @@
         span {
             height: fit-content;
             font-weight: bold;
-            color: #E4FDE1;
+            color: #114B5F;
             font-size: 2rem;
         }
     }
@@ -42,7 +42,7 @@
         flex-direction: column;
     
         p {
-            color: #E4FDE1;
+            color: #456990; 
             text-align: center;
             font-size: 14px;
         }
@@ -56,7 +56,7 @@
             ;
             filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.15));
             border-radius: 10px;
-            color: #E4FDE1;
+            color: #456990;
             text-align: center;
             padding: 8px;
             font-size: 14px;
@@ -81,6 +81,7 @@
     align-items: center;
     justify-content: center;
     background: linear-gradient(128.94deg, #E4FDE1 -33.96%, #456990 36.71%, #114B5F 112.25%);
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
 
     .skills-title {
         display: block;
