@@ -8,7 +8,12 @@
     height: 100vh;
     margin: 0 auto;
     padding: 2rem 0;
-    background: white;
+    background: #293133;
+    color: #FFFFFF;
+
+    p {
+        text-align: center;
+    }
 }
 
 .btn {
@@ -16,17 +21,17 @@
     transition: all 225ms ease-in-out;
     display: flex;
     width: fit-content;
-    border: 2px solid #114B5F;
+    border: 2px solid rgb(6, 161, 6);
     padding: 15px 25px;
     border-radius: 10px;
-    color: #114B5F;
+    color: #FFFFFF;
     user-select: none;
     -webkit-user-select: none;
 
     &:hover {
         transition: all 225ms ease-in-out;
-        background-color: #114B5F;
-        color: white;
+        background-color: rgb(6, 161, 6);
+        color: #FFFFFF;
     }
 }
 

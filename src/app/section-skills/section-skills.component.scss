@@ -10,13 +10,17 @@
 }
 
 .wrapper {
-    padding: 32px 0px;
+    box-sizing: border-box;
+    padding: 2rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     max-width: 1024px;
     width: calc(min(100vw, 1024px) - 4rem);
+    background: #293133;
+    margin-bottom: 1rem;
+    border-radius: 10px;
 
     .headline {
         box-sizing: border-box;
@@ -28,7 +32,7 @@
         span {
             height: fit-content;
             font-weight: bold;
-            color: #114B5F;
+            color: #FFFFFF;
             font-size: 2rem;
         }
     }
@@ -42,7 +46,7 @@
         flex-direction: column;
     
         p {
-            color: #456990; 
+            color: #FFFFFF; 
             text-align: center;
             font-size: 1rem;
         }
@@ -52,40 +56,40 @@
             transition: all 225ms ease-in-out;
             box-sizing: border-box;
             max-width: 256px;
-            border: 2px solid #114B5F;
+            border: 2px solid rgb(6, 161, 6);
             ;
             filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.15));
             border-radius: 10px;
-            color: #456990;
+            color: #FFFFFF;
             text-align: center;
             padding: 8px;
             font-size: 1rem;
     
             &:hover {
                 transition: all 225ms ease-in-out;
-                background-color: #114B5F;
+                background-color: rgb(6, 161, 6);
                 ;
-                color: white;
+                color: #FFFFFF;
             }
         }
     }
 }
 
 .skills-wrapper {
-    padding: 32px 0px;
+    box-sizing: border-box;
+    padding: 2rem 1rem;
     display: flex;
     max-width: 1024px;
-    min-width: 350px;
-    width: calc(min(100vw, 1024px));
+    width: calc(min(100vw, 1024px) - 4rem);
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(128.94deg, #E4FDE1 -33.96%, #456990 36.71%, #114B5F 112.25%);
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+    background: #293133;
+    border-radius: 10px;
 
     .skills-title {
         display: block;
-        color: white;
+        color: #FFFFFF;
         font-weight: bold;
         cursor: default;
         font-size: 2rem;
@@ -96,7 +100,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-evenly;
-        width: 90%;
+        width: 100%;
         margin-top: 1rem;
 
         .icon-wrap {
@@ -117,7 +121,17 @@
             cursor: default;
             font-weight: normal;
             font-size: 12px;
-            color: white;
+            color: #FFFFFF;
         }
+    }
+}
+
+@media screen and (width < 1024px) {
+    .wrapper {
+        width: calc(min(100vw, 1024px) - 2rem);
+    }
+
+    .skills-wrapper {
+        width: calc(min(100vw, 1024px) - 2rem);
     }
 }

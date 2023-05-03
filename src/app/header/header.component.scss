@@ -2,9 +2,10 @@
     position: relative;
     display: flex;
     height: 4rem;
+    margin-top: 2rem;
     padding: 0rem 2rem;
     z-index: 1;
-    background: linear-gradient(128.94deg, #9ac1ec -33.96%, #456990 36.71%, #114B5F 112.25%);
+    background: #293133;
 }
 
 .wrapper {
@@ -64,11 +65,11 @@
     transition: all 225ms ease-in-out;
     box-sizing: border-box;
     display: flex;
-    position: fixed;
+    position: absolute;
     flex-direction: column;
     right: -50%;
-    top: 80px;
-    background: #114B5F;
+    top: 10rem;
+    background: #293133;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
     z-index: 2;
@@ -139,21 +140,25 @@
     z-index: 3;
     transition: all 225ms ease-in-out;
     display: flex;
-    background: #114B5F;
+    background: #293133;
     border-radius: 50px;
     align-items: center;
     justify-content: center;
     width: 20px;
-    height: 20px;
-    color: white;
-    position: fixed;
+    height: 50px;
+    color: #FFFF;
+    position: absolute;
     right: -300px;
-    top: 70px;
+    top: calc(10rem + 60px - 25px);
+
+    &:hover {
+        background: #456990;
+    }
 }
 
 .close-burger {
     transition: all 225ms ease-in-out;
-    right: 110px !important;
+    right: 125px !important;
     
 }
 
@@ -221,6 +226,7 @@
     }
 }
 
+/** Maybe not used
 @media screen and (max-width < 1024px) {
     .wrapper {
         width: calc(min(100vw, 1024px) - 0rem);
@@ -283,4 +289,4 @@
         background-color: white;
         margin: 4px 0;
     }
-}
+}**/

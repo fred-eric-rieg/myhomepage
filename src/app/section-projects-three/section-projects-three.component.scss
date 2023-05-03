@@ -5,10 +5,15 @@
     justify-content: center;
     align-items: center;
     max-width: 1024px;
-    width: calc(min(100vw, 1024px) - 0rem);
+    width: calc(min(100vw, 1024px) - 4rem);
     margin: 0 auto;
+    background: #293133;
+    border-radius: 10px;
+    margin-bottom: 1rem;
 
     .wrapper {
+        box-sizing: border-box;
+        padding: 2rem 1rem;
         max-width: 1024px;
         width: calc(min(100vw, 1024px) - 4rem);
         display: flex;
@@ -22,7 +27,6 @@
     transition: all 225ms ease-in-out;
     align-self: center;
     justify-content: center;
-    padding: 2rem 0;
 
     img {
         transition: all 225ms ease-in-out;
@@ -43,19 +47,17 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    padding: 2rem 0 2rem 0; // top right bottom left: needs extra padding on bottom to match the others!
-    font-size: 16px;
 
     span {
         cursor: default;
         font-weight: bold;
-        color: #114B5F;
-        font-size: 18px;
+        color: #FFFFFF;
+        font-size: 1.5rem;
     }
 
     p {
         cursor: default;
-        color: #456990;
+        color: #FFFFFF;
         text-align: center;
     }
 
@@ -72,17 +74,17 @@
         display: flex;
         height: 40px;
         width: 100px;
-        border: 2px solid #456990;
+        border: 2px solid rgb(6, 161, 6);
         border-radius: 10px;
-        color: #456990;
+        color: #FFFFFF;
         align-items: center;
         justify-content: center;
-        background: white;
+        background: #293133;
 
         &:hover {
             transition: all 225ms ease-in-out;
-            background: #456990;
-            color: white;
+            background: rgb(6, 161, 6);
+            color: #FFFFFF;
         }
     }
 }
@@ -96,6 +98,14 @@
     .box {
         img {
             filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.15)) grayscale(0%) !important;
+        }
+    }
+
+    .section-projects-background {
+        width: calc(min(100vw, 1024px) - 2rem);
+
+        .wrapper {
+            width: calc(min(100vw, 1024px) - 2rem);
         }
     }
 }

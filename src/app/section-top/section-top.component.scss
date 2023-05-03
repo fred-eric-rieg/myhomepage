@@ -7,13 +7,13 @@
     align-items: center;
     width: calc(min(100vw, 1024px));
     height: calc(100vh - 4rem);
-    //background: linear-gradient(179.99deg, #ffffff 12.89%, #EAF0FF 91.39%);
+    margin-bottom: 1rem;
 }
 
 .icons {
-    position: relative;
-    left: calc(50% - 3rem);
-    top: calc(50% - 6.5rem);
+    position: absolute;
+    right: 2rem;
+    bottom: 4rem;
     display: flex;
     flex-direction: column;
     height: 96px;
@@ -30,10 +30,6 @@
             height: 32px;
         }
 
-        .fill-color {
-            fill: #456990;
-        }
-
         &:hover img {
             transition: all 225ms ease-in-out;
             transform: translateX(-20px);
@@ -44,19 +40,21 @@
 // Took me some hours to figure this out but it was worth it!
 // Basically every p in every column gets a slightly different animation-delay and one animation.
 .matrix-name {
-    z-index: 5;
+    z-index: 2;
     position: absolute;
-    left: 4rem;
+    left: 2rem;
     bottom: 4rem;
     display: flex;
     align-items: flex-end;
     flex-direction: row;
     height: 40px;
     width: fit-content;
+    background: #121212;
+    border-radius: 10px;
 
     p {
         margin: 0;
-        color: #456990;
+        color: #FFFFFF;
         font-size: 2rem;
     }
 }
@@ -90,7 +88,7 @@
 @keyframes matrixgreen {
     0% {
         opacity: 1;
-        color: black;
+        color: lightgreen;
     }
     70% {
         opacity: 1;
@@ -101,18 +99,12 @@
     }
 }
 
-@media screen and (max-width: 1024px) {
-    .icons {
-        left: calc(50% - 3rem);
-        top: calc(50% - 6.5rem);
-    }
-}
-
 @media screen and (width < 700px) {
     .matrix-name {
         z-index: 15;
         top: 0rem;
         left: 2rem;
+        background: unset;
         p {
             font-size: 1rem;
             font-weight: bold;
