@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./section-top.component.scss']
 })
 export class SectionTopComponent {
-  // Strings are splittet into single letters to animate them.
+  // Strings are splittet into single letters to animate them individually.
   english: string[] = 'Welcome! I am Frederic Rieg'.split('');
   german: string[] = 'Willkommen! Ich bin Frederic Rieg'.split('');
   french: string[] = 'Bienvenue! Je suis Frederic Rieg'.split('');

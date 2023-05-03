@@ -18,6 +18,7 @@
         width: calc(min(100vw, 1024px) - 4rem);
         height: fit-content;
         display: flex;
+        align-items: center;
         flex-direction: column;
     }
 }
@@ -57,7 +58,7 @@
         height: 40px;
         width: 100px;
         border: 2px solid rgb(6, 161, 6);
-        border-radius: 10px;
+        border-radius: 8px;
         color: #FFFFFF;
         align-items: center;
         justify-content: center;
@@ -77,9 +78,6 @@
 }
 
 .matrix-two {
-    position: relative;
-    left: 50%;
-    margin-top: 2rem;
     max-width: fit-content;
     max-height: fit-content;
     display: flex;
@@ -96,7 +94,6 @@
             color: rgb(6, 161, 6);
             font-size: 0.4rem;
             animation: matrixgreen 3s infinite;
-            opacity: 1;
         }
     }
 }
