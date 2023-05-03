@@ -13,13 +13,13 @@
                 <div class="line-bottom" [class.move-bottom-line]="openBurger"></div>
             </div>
         </div>
-        <div class="burger-items" [class.open-burger]="openBurger">
-            <div class="burger-menu-item1" (click)="scrollAbout()"><span class="burger-span">About me</span></div>
-            <div class="burger-menu-item2" (click)="scrollProjects()"><span class="burger-span">Projects</span></div>
-            <div class="burger-menu-item3" (click)="scrollContact()"><span class="burger-span">Contact</span></div>
+        <div class="slide-items" [class.open-slide]="openBurger">
+            <div class="slide-menu-item1" (click)="scrollAbout()"><span class="slide-span">About me</span></div>
+            <div class="slide-menu-item2" (click)="scrollProjects()"><span class="slide-span">Projects</span></div>
+            <div class="slide-menu-item3" (click)="scrollContact()"><span class="slide-span">Contact</span></div>
         </div>
     </div>
-    <div class="burger-close" [class.close-burger]="openBurger" (click)="closeBurgerMenu()">
+    <div class="slide-close" [class.close-slide]="openBurger" (click)="closeBurgerMenu()">
         >
     </div>
 </header>
