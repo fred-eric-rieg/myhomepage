@@ -41,19 +41,19 @@
     z-index: 2;
     position: absolute;
     left: 2rem;
-    bottom: 4rem;
+    top: calc(33% - 20px);
     display: flex;
     align-items: flex-end;
     flex-direction: row;
     height: 40px;
     width: fit-content;
-    background: #121212;
-    border-radius: 10px;
+    border-radius: 8px;
 
     p {
         margin: 0;
         color: #FFFFFF;
-        font-size: 2rem;
+        font-size: 4rem;
+        font-weight: bold;
     }
 }
 
@@ -61,8 +61,8 @@
 // Basically every p in every column gets a slightly different animation-delay and only one animation keyframe.
 .matrix-two {
     position: absolute;
-    top: 2rem;
-    left: 32rem;
+    top: 4rem;
+    left: 40rem;
     max-width: fit-content;
     max-height: fit-content;
     display: flex;
@@ -86,13 +86,20 @@
 
 @keyframes matrixgreen {
     0% {
+        opacity: 0;
+    }
+
+    10% {
         opacity: 1;
         color: lightgreen;
     }
+
     70% {
         opacity: 1;
-        color: rgb(6, 161, 6);;
+        color: rgb(6, 161, 6);
+        ;
     }
+
     100% {
         opacity: 0;
     }
@@ -101,19 +108,21 @@
 @media screen and (width < 700px) {
     .matrix-name {
         z-index: 15;
-        top: 0rem;
+        top: 4rem;
         left: 2rem;
         background: unset;
+
         p {
-            font-size: 1rem;
+            font-size: 2rem;
             font-weight: bold;
         }
     }
 
     .matrix-two {
-        top: 4rem;
-        left: 2rem;
+        top: 7rem;
+        left: calc(50% - 54px);
         margin: 0;
+
         p {
             font-size: 0.6rem !important;
         }

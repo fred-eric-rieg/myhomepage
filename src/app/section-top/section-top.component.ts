@@ -14,8 +14,6 @@ export class SectionTopComponent {
   turkish: string[] = 'Hoş geldiniz! Ben Frederic Rieg'.split('');
   japanese: string[] = 'ようこそ！ 私はフレデリック・リーグです'.split('');
   chinese: string[] = '欢迎你! 我是弗雷德里克-里格'.split('');
-  name: string[] = 'Frederic Rieg:'.split('');
-  profession: string[] = 'Frontend Developer'.split('');
 
   constructor() {
   }
