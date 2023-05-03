@@ -11,10 +11,7 @@ export class SectionSkillsComponent {
   }
 
   scrollBottom() {
-    if (window.innerWidth < 600 && window.innerHeight < 700) {
-      window.scrollTo({ top: window.innerHeight * 4.6, behavior: 'smooth' })
-    } else {
-      window.scrollTo({ top: window.innerHeight * 4, behavior: 'smooth' })
-    }
+    const element = document.getElementById("contact");
+    element!.scrollIntoView({behavior: 'smooth'});
   }
 }
