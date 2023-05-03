@@ -2,7 +2,6 @@
     position: relative;
     display: flex;
     height: 4rem;
-    margin-top: 2rem;
     padding: 0rem 2rem;
     z-index: 1;
     background: #293133;
@@ -159,7 +158,7 @@
 .close-burger {
     transition: all 225ms ease-in-out;
     right: 125px !important;
-    
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -179,26 +178,12 @@
         width: 0px !important;
     }
 
+    // Hover animation for the burger menu is here:
     .burger-menu {
         transition: all 225ms ease-in-out;
         display: flex;
         flex-direction: column;
         cursor: pointer;
-
-        &:hover .line-top {
-            transition: all 225ms ease-in-out;
-            transform: translateX(-32px) translateY(24px) rotate(-180deg);
-        }
-
-        &:hover .line-middle {
-            transition: all 325ms ease-in-out;
-            transform: translateX(-32px) translateY(0px) rotate(-180deg);
-        }
-
-        &:hover .line-bottom {
-            transition: all 425ms ease-in-out;
-            transform: translateX(-32px) translateY(-24px) rotate(-180deg);
-        }
     }
 
     .line-top {
@@ -223,6 +208,22 @@
         height: 4px;
         background-color: white;
         margin: 4px 0;
+    }
+
+    .move-burger-background {
+        transform: translateX(-32px);
+    }
+
+    .move-top-line {
+        transform: translateY(24px) rotate(-180deg);
+    }
+
+    .move-middle-line {
+        transform: translateY(0px) rotate(-180deg);
+    }
+
+    .move-bottom-line {
+        transform: translateY(-24px) rotate(-180deg);
     }
 }
 

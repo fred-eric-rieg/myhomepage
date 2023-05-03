@@ -37,8 +37,6 @@
     }
 }
 
-// Took me some hours to figure this out but it was worth it!
-// Basically every p in every column gets a slightly different animation-delay and one animation.
 .matrix-name {
     z-index: 2;
     position: absolute;
@@ -59,6 +57,8 @@
     }
 }
 
+// Took me some hours to figure this out but it was worth it!
+// Basically every p in every column gets a slightly different animation-delay and only one animation keyframe.
 .matrix-two {
     position: absolute;
     top: 2rem;
@@ -68,7 +68,6 @@
     display: flex;
     flex-direction: row;
     gap: 8px;
-    //transform: rotate3d(0, 1, 0, 60deg);
 
     .column {
         display: flex;

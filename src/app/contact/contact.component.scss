@@ -84,23 +84,23 @@
     input {
         box-sizing: border-box;
         padding: 0.5rem 1rem;
-        border-radius: 10px;
-        border: 2px solid #06A106;
+        border-radius: 8px;
+        border: 2px solid #121212;
         user-select: none;
         width: 100%;
         font-size: 12px;
         background: rgba($color: #FFFFFF, $alpha: 0.9);
 
         &::-webkit-input-placeholder {
-            font-family: 'Optima', sans-serif;
+            font-family: 'Optima', 'Lato', sans-serif;
         }
 
         &::-moz-placeholder {
-            font-family: 'Optima', sans-serif;
+            font-family: 'Optima', 'Lato',  sans-serif;
         }
 
         &:focus {
-            outline: none;
+            outline: 2px solid #06A106;
         }
     }
 
@@ -110,22 +110,22 @@
         width: 100%;
         min-height: 150px;
         max-height: 200px;
-        border-radius: 10px;
+        border-radius: 8px;
         resize: vertical;
-        border: 2px solid #06A106;
+        border: 2px solid #121212;
         font-size: 12px;
         background: rgba($color: #FFFFFF, $alpha: 0.9);
 
         &::-webkit-input-placeholder {
-            font-family: 'Optima', sans-serif;
+            font-family: 'Optima', 'Lato', sans-serif;
         }
 
         &::-moz-placeholder {
-            font-family: 'Optima', sans-serif;
+            font-family: 'Optima', 'Lato', sans-serif;
         }
 
         &:focus {
-            outline: none;
+            outline: 2px solid #06A106;
         }
     }
 
@@ -152,7 +152,7 @@
     cursor: default;
     transition: all 225ms ease-in-out;
     position: absolute;
-    right: -100%;
+    right: -2556px;
     top: 60%;
     width: 200px;
     height: 50px;
