@@ -6,11 +6,11 @@
         <div class="highlight"><span class="pink">Need a frontend developer?</span><span class="green">Contact me</span></div>
     </div>
     <div class="right">
-        <form class="form" [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
-            <input type="text" placeholder="Name" id="name" formControlName="name">
-            <input type="text" placeholder="Email" id="email" formControlEmail="email">
-            <textarea id="text" cols="30" rows="10" placeholder="Message" formControlText="text"></textarea>
-            <button type="submit">Github</button>
+        <form class="form" [formGroup]="checkoutForm" ngNativeValidate (ngSubmit)="onSubmit()" #myForm>
+            <input required type="text" placeholder="Name" formControlName="name">
+            <input required type="text" placeholder="Email" formControlName="email">
+            <textarea required cols="30" rows="10" placeholder="Message" formControlName="text"></textarea>
+            <button type="submit">Write me</button>
         </form>
     </div>
     <div class="message" [class.show-message]="showMessage">
