@@ -90,6 +90,9 @@
         width: 100%;
         font-size: 12px;
         background: rgba($color: #FFFFFF, $alpha: 0.9);
+        ::placeholder {
+            font-family: 'Optima', 'Lato', sans-serif;
+        }
 
         &::-webkit-input-placeholder {
             font-family: 'Optima', 'Lato', sans-serif;
@@ -115,6 +118,10 @@
         border: 2px solid #121212;
         font-size: 12px;
         background: rgba($color: #FFFFFF, $alpha: 0.9);
+        font-family: 'Optima', 'Lato', sans-serif;
+        ::placeholder {
+            font-family: 'Optima', 'Lato', sans-serif;
+        }
 
         &::-webkit-input-placeholder {
             font-family: 'Optima', 'Lato', sans-serif;
