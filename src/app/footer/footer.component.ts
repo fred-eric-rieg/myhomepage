@@ -12,6 +12,7 @@ export class FooterComponent {
 
   }
 
+  
   scrollTop() {
     const element = document.getElementById("top");
     element!.scrollIntoView({behavior: 'smooth'});
