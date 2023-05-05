@@ -1,5 +1,6 @@
 <div class="section-projects-background">
     <div class="wrapper">
+        <!-- Matrix animation with ngFor + ngStyle + TypeScript split strings -->
         <div class="matrix-two">
             <div class="column">
                 <p *ngFor="let letter of english; index as i;" id="letter{{i}}" [ngStyle]="{'animation-delay': (i * 120) + 'ms'}">{{ letter }}</p>
