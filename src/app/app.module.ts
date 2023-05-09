@@ -16,6 +16,7 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { SectionProjectsFourComponent } from './section-projects-four/section-projects-four.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SectionProjectsFiveComponent } from './section-projects-five/section-projects-five.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     SectionProjectsOneComponent,
     ContactComponent,
     FooterComponent,
-    SectionProjectsFourComponent
+    SectionProjectsFourComponent,
+    SectionProjectsFiveComponent
   ],
   imports: [
     BrowserModule,
