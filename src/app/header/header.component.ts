@@ -39,6 +39,12 @@ export class HeaderComponent {
   closeBurgerMenu() {
     this.openBurger = false;
   }
+
+  
+  scrollTop() {
+    const element = document.getElementById("top");
+    element!.scrollIntoView({behavior: 'smooth'});
+  }
 }
 
 
