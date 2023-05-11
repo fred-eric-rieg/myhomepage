@@ -15,5 +15,8 @@
     </div>
     <div class="message" [class.show-message]="showMessage">
         Encrypting message...
+        <!-- Turning gears with animation (I created this svg with figma)-->
+        <img [class.turn-left]="showMessage" src="assets/img/gear.svg">
+        <img [class.turn-right]="showMessage" src="assets/img/gear.svg">
     </div>
 </div>
