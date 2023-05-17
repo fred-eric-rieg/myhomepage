@@ -17,6 +17,7 @@ import { FooterComponent } from './footer/footer.component';
 import { SectionProjectsFourComponent } from './section-projects-four/section-projects-four.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SectionProjectsFiveComponent } from './section-projects-five/section-projects-five.component';
+import { AnimationsComponent } from './animations/animations.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { SectionProjectsFiveComponent } from './section-projects-five/section-pr
     ContactComponent,
     FooterComponent,
     SectionProjectsFourComponent,
-    SectionProjectsFiveComponent
+    SectionProjectsFiveComponent,
+    AnimationsComponent
   ],
   imports: [
     BrowserModule,
