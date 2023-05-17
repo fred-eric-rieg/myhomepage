@@ -38,7 +38,6 @@
 }
 
 .matrix-name {
-    z-index: 2;
     position: absolute;
     left: 2rem;
     top: calc(33% - 20px);
@@ -90,7 +89,6 @@
 
 @media screen and (width < 700px) {
     .matrix-name {
-        z-index: 15;
         left: 2rem;
         background: unset;
 
