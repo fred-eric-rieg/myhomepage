@@ -91,7 +91,6 @@
 @media screen and (width < 700px) {
     .matrix-name {
         z-index: 15;
-        top: 6rem;
         left: 2rem;
         background: unset;
 
@@ -100,36 +99,10 @@
             font-weight: bold;
         }
     }
-
-    .matrix-two {
-        top: 9rem;
-        left: calc(50% - 54px);
-        margin: 0;
-
-        p {
-            font-size: 0.6rem !important;
-        }
-    }
 }
 
 @media screen and (height < 1024px) {
-    .matrix-two {
-        p {
-            font-size: 0.5rem;
-        }
-    }
-
     .scroll-container {
         left: 2rem;
-    }
-}
-
-@media screen and (width > 1440px) {
-    .matrix-two {
-        .column {
-            p {
-                font-size: 1.5rem;
-            }
-        }
     }
 }
