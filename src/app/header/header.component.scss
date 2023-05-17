@@ -68,7 +68,8 @@
     display: flex;
     position: absolute;
     flex-direction: column;
-    right: -50%;
+    opacity: 0;
+    right: 0px;
     top: 12rem;
     background: #293133;
     border-bottom-left-radius: 8px;
@@ -134,13 +135,14 @@
 
 .open-slide {
     transition: all 225ms ease-in-out;
-    right: 0px !important;
+    opacity: 1;
 }
 
 .slide-close {
     cursor: pointer;
     user-select: none;
     z-index: 3;
+    opacity: 0;
     transition: all 225ms ease-in-out;
     display: flex;
     background: #293133;
@@ -151,7 +153,7 @@
     height: 40px;
     color: #FFFF;
     position: absolute;
-    right: -300px;
+    right: 158px;
     top: calc(12rem + 72px - 20px);
 
     &:hover {
@@ -160,8 +162,8 @@
 }
 
 .close-slide {
+    opacity: 1;
     transition: all 225ms ease-in-out;
-    right: 158px !important;
 }
 
 @media screen and (max-width: 1024px) {

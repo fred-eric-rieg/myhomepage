@@ -147,9 +147,13 @@ export class AnimationsComponent implements AfterViewInit, OnInit {
    */
   @HostListener('window:resize', ['$event'])
   onWindowResize() {
-    console.log('resize')
     this.renderer.setSize(window.innerWidth, window.innerHeight);
     this.camera.aspect = window.innerWidth / window.innerHeight;
     this.camera.updateProjectionMatrix();
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  onWindowScroll() {
+    console.log('scrolling');
   }
 }
