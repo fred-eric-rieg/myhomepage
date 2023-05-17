@@ -12,7 +12,7 @@ export class HeaderComponent {
 
   }
 
-
+  
   scrollAbout() {
     const element = document.getElementById("about");
     element!.scrollIntoView({behavior: 'smooth'});
@@ -46,7 +46,3 @@ export class HeaderComponent {
     element!.scrollIntoView({behavior: 'smooth'});
   }
 }
-
-
-
-

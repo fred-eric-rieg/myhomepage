@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, ElementRef, Input, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, HostListener, Input, OnInit, ViewChild } from '@angular/core';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
@@ -139,4 +139,17 @@ export class AnimationsComponent implements AfterViewInit, OnInit {
     star.position.set(x, y, z - 400);
     this.scene.add(star);
   };
+
+
+  /**
+   * This method is automatically invoked when the window is resized.
+   * It must update the camera and renderer to account for new aspect ratios.
+   */
+  @HostListener('window:resize', ['$event'])
+  onWindowResize() {
+    console.log('resize')
+    this.renderer.setSize(window.innerWidth, window.innerHeight);
+    this.camera.aspect = window.innerWidth / window.innerHeight;
+    this.camera.updateProjectionMatrix();
+  }
 }
