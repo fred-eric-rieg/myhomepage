@@ -45,7 +45,7 @@ export class AnimationsComponent implements AfterViewInit, OnInit {
 
   // Stage properties
   @Input() public cameraZ: number = 1500; // Camera Z position
-  @Input() public cameraY: number = 500; // Camera Y position
+  @Input() public cameraY: number = 400; // Camera Y position
   @Input() public cameraX: number = 400; // Camera X position
   @Input() public fieldOfView: number = 1; // Camera field of view
   // (only objects between near and far clipping pane are rendered)
@@ -128,9 +128,8 @@ export class AnimationsComponent implements AfterViewInit, OnInit {
 
     this.satelite.rotation.x += this.rotationSpeedY * 5;
 
-    this.satelite.position.x = 30 * Math.sin((Date.now() - this.now) * 0.0001);
-    this.satelite.position.z = 30 * Math.cos((Date.now() - this.now) * 0.0001);
-    this.satelite.position.y = 10 * Math.cos((Date.now() - this.now) * 0.0001);
+    this.satelite.position.x = 20 * Math.sin((Date.now() - this.now) * 0.0001);
+    this.satelite.position.y = 20 * Math.cos((Date.now() - this.now) * 0.0001);
 
     //this.moveCamera();
   }
