@@ -1,6 +1,8 @@
 import { AfterViewInit, Component, ElementRef, HostListener, Input, OnInit, ViewChild } from '@angular/core';
+import { Scroll } from '@angular/router';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
 
 @Component({
   selector: 'app-animations',
@@ -13,12 +15,14 @@ export class AnimationsComponent implements AfterViewInit, OnInit {
   renderer!: THREE.WebGLRenderer;
   scene!: THREE.Scene;
   private now = Date.now();
+  private moveRight = true;
 
   constructor() { }
 
   ngOnInit(): void { }
 
   ngAfterViewInit(): void {
+    this.loadModel();
     this.createSzene();
     this.startRenderingLoop();
     for (let index = 0; index < 5000; index++) {
@@ -60,7 +64,18 @@ export class AnimationsComponent implements AfterViewInit, OnInit {
   private moonMaterial = new THREE.MeshStandardMaterial({ color: '#39ff14', wireframe: true }); // Standard Material for light and shadow
   private earth: THREE.Mesh = new THREE.Mesh(this.geometryEarth, this.earthMaterial);
   private moon: THREE.Mesh = new THREE.Mesh(this.geometryMoon, this.moonMaterial);
+  private satelite: THREE.Group = new THREE.Group();
 
+
+  private loadModel() {
+    let loader = new GLTFLoader();
+    loader.load('assets/models/satelite.gltf', (gltf) => {
+      let satelite = gltf.scene;
+      satelite.scale.set(0.1, 0.1, 0.1);
+      this.satelite = satelite;
+      this.scene.add(satelite);
+    });
+  }
 
   private createSzene() {
     // Setting the scene
@@ -104,12 +119,35 @@ export class AnimationsComponent implements AfterViewInit, OnInit {
 
 
 
-  private animateCube() {
+  private animate() {
     this.earth.rotation.y -= this.rotationSpeedY;
 
     this.moon.rotation.y += this.rotationSpeedY * 5;
     this.moon.position.x = 15 * Math.sin((Date.now() - this.now) * 0.0001);
     this.moon.position.z = 15 * Math.cos((Date.now() - this.now) * 0.0001);
+
+    this.satelite.rotation.x += this.rotationSpeedY * 5;
+
+    this.satelite.position.x = 30 * Math.sin((Date.now() - this.now) * 0.0001);
+    this.satelite.position.z = 30 * Math.cos((Date.now() - this.now) * 0.0001);
+    this.satelite.position.y = 10 * Math.cos((Date.now() - this.now) * 0.0001);
+
+    //this.moveCamera();
+  }
+
+
+  private moveCamera() {
+      let time = Date.now();
+      if (time - this.now < 10000) {
+        this.camera.position.x += 0.05;
+        this.camera.position.z -= 0.05;
+        this.camera.rotation.y += 0.0000001;
+      }
+      if (time - this.now > 10000 && time - this.now < 17000) {
+        this.camera.rotation.y += 0.00001;
+        this.camera.position.x -= 0.05;
+        this.camera.position.z += 0.05;
+      }
   }
 
 
@@ -125,7 +163,7 @@ export class AnimationsComponent implements AfterViewInit, OnInit {
     let component: AnimationsComponent = this;
     (function render() {
       requestAnimationFrame(render);
-      component.animateCube();
+      component.animate();
       component.renderer.render(component.scene, component.camera);
     }());
   }
@@ -153,7 +191,7 @@ export class AnimationsComponent implements AfterViewInit, OnInit {
   }
 
   @HostListener('window:scroll', ['$event'])
-  onWindowScroll() {
-    console.log('scrolling');
+  onWindowScroll($event: any) {
+    
   }
 }
