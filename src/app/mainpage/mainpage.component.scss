@@ -4,4 +4,11 @@ main {
     max-width: 1024px;
     margin: 0 auto;
     overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+main::-webkit-scrollbar {
+    display: none;
 }

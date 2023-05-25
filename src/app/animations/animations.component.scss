@@ -5,4 +5,11 @@ canvas {
     width: 100vw;
     height: 100vh;
     margin: 0 auto;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+canvas::-webkit-scrollbar {
+    display: none;
 }
