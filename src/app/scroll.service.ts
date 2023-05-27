@@ -4,6 +4,11 @@ import { BehaviorSubject } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
+
+/**
+ * This service broadcasts the ElementRef objects of the header, footer, projects, contact and about section.
+ * Other components can subscribe to the target element and scroll to it.
+ */
 export class ScrollService {
 
   private scrollAbout = new BehaviorSubject<ElementRef>(new ElementRef(document.createElement('div')));
