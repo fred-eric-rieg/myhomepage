@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
+import { ScrollService } from '../scroll.service';
 
 @Component({
   selector: 'app-footer',
@@ -8,13 +9,24 @@ import { Component } from '@angular/core';
 export class FooterComponent {
   showScrollToTop: boolean = false;
 
-  constructor() {
+  topElement: ElementRef | undefined;
+
+
+  constructor(private scrollService: ScrollService) {
 
   }
 
+  ngOnInit() {
+    this.scrollService.targetTop.subscribe((element) => {
+      this.topElement = element;
+    });
+  }
   
+
+  /** Using a service as transmitter of the target ElementRef object from the header */
   scrollTop() {
-    const element = document.getElementById("top");
+    this.scrollService.setScrollElement(this.topElement!, 'top');
+    const element = this.topElement?.nativeElement;
     element!.scrollIntoView({behavior: 'smooth'});
   }
 }

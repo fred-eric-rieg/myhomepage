@@ -28,8 +28,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-    
-        span {
+
+        h2 {
             height: fit-content;
             font-weight: bold;
             color: #FFFFFF;
@@ -44,13 +44,13 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-    
+
         p {
-            color: #FFFFFF; 
+            color: #FFFFFF;
             text-align: center;
             font-size: 1rem;
         }
-    
+
         .send-message-btn {
             cursor: pointer;
             transition: all 225ms ease-in-out;
@@ -64,7 +64,7 @@
             text-align: center;
             padding: 8px;
             font-size: 1rem;
-    
+
             &:hover {
                 transition: all 225ms ease-in-out;
                 background-color: rgb(6, 161, 6);

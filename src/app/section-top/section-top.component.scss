@@ -38,7 +38,6 @@
 }
 
 .matrix-name {
-    z-index: 2;
     position: absolute;
     left: 2rem;
     top: calc(33% - 20px);
@@ -49,38 +48,15 @@
     width: fit-content;
     border-radius: 8px;
 
-    p {
+    h1 {
         margin: 0;
-        color: #FFFFFF;
+        color: rgb(255, 255, 255);
         font-size: 4rem;
         font-weight: bold;
     }
-}
 
-// Took me some hours to figure this out but it was worth it!
-// Basically every p in every column gets a slightly different animation-delay and only one animation keyframe.
-.matrix-two {
-    position: absolute;
-    top: 4rem;
-    left: 40rem;
-    max-width: fit-content;
-    max-height: fit-content;
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
-
-    .column {
-        display: flex;
-        flex-direction: column;
-        gap: 1px;
-
-        p {
-            margin: 0;
-            color: rgb(6, 161, 6);
-            font-size: 1.1rem;
-            animation: matrixgreen 3s infinite;
-            opacity: 1;
-        }
+    h2 {
+        display: none;
     }
 }
 
@@ -115,69 +91,20 @@
     }
 }
 
-@keyframes matrixgreen {
-    0% {
-        opacity: 0;
-    }
-
-    10% {
-        opacity: 1;
-        color: lightgreen;
-    }
-
-    70% {
-        opacity: 1;
-        color: rgb(6, 161, 6);
-        ;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
 @media screen and (width < 700px) {
     .matrix-name {
-        z-index: 15;
-        top: 6rem;
         left: 2rem;
         background: unset;
 
-        p {
+        h1 {
             font-size: 2rem;
             font-weight: bold;
-        }
-    }
-
-    .matrix-two {
-        top: 9rem;
-        left: calc(50% - 54px);
-        margin: 0;
-
-        p {
-            font-size: 0.6rem !important;
         }
     }
 }
 
 @media screen and (height < 1024px) {
-    .matrix-two {
-        p {
-            font-size: 0.5rem;
-        }
-    }
-
     .scroll-container {
         left: 2rem;
-    }
-}
-
-@media screen and (width > 1440px) {
-    .matrix-two {
-        .column {
-            p {
-                font-size: 1.5rem;
-            }
-        }
     }
 }

@@ -2,50 +2,20 @@
 
     <!-- Inline styles with ngStyle and ngFor do the trick to create the necessary delay for the animation -->
     <div class="matrix-name">
-        <p>Hi I am Frederic a<br>Frontend Developer <br> living in Ankara</p>
-    </div>
-
-    <div class="matrix-two">
-        <div class="column">
-            <p *ngFor="let letter of english; index as i;" id="letter{{i}}"
-                [ngStyle]="{'animation-delay': (i * 120) + 'ms'}">{{ letter }}</p>
-        </div>
-        <div class="column">
-            <p *ngFor="let letter of german; index as j;" id="letter{{j}}"
-                [ngStyle]="{'animation-delay': (j * 28) + 'ms'}">{{ letter }}</p>
-        </div>
-        <div class="column">
-            <p *ngFor="let letter of french; index as k;" id="letter{{k}}"
-                [ngStyle]="{'animation-delay': (k * 98) + 'ms'}">{{ letter }}</p>
-        </div>
-        <div class="column">
-            <p *ngFor="let letter of dutch; index as l;" id="letter{{l}}"
-                [ngStyle]="{'animation-delay': (l * 222) + 'ms'}">{{ letter }}</p>
-        </div>
-        <div class="column">
-            <p *ngFor="let letter of turkish; index as m;" id="letter{{m}}"
-                [ngStyle]="{'animation-delay': (m * 120) + 'ms'}">{{ letter }}</p>
-        </div>
-        <div class="column">
-            <p *ngFor="let letter of japanese; index as n;" id="letter{{n}}"
-                [ngStyle]="{'animation-delay': (n * 90) + 'ms'}">{{ letter }}</p>
-        </div>
-        <div class="column">
-            <p *ngFor="let letter of chinese; index as o;" id="letter{{o}}"
-                [ngStyle]="{'animation-delay': (o * 120) + 'ms'}">{{ letter }}</p>
-        </div>
+        <h1>Hello World,<br>I am Frederic a<br>Web Developer.<br></h1>
+        <h2>My Focus is Frontend Development. Every day I learn more about digital technology and bring it to life in puzzling lines of code.</h2>
     </div>
 
     <div class="scroll-container">
-        <img class="scroll" src="assets/img/scroll.svg">
-        <img class="scroll scroll--delay1" src="assets/img/scroll.svg">
-        <img class="scroll scroll--delay2" src="assets/img/scroll.svg">
+        <img class="scroll" src="assets/img/scroll.svg" alt="scroll_icon">
+        <img class="scroll scroll--delay1" src="assets/img/scroll.svg" alt="scroll_icon">
+        <img class="scroll scroll--delay2" src="assets/img/scroll.svg" alt="scroll_icon">
     </div>
 
     <div class="icons">
         <a class="image-wrap" href="https://github.com/FredVomJupiter" target="_blank">
             <img src="assets/img/github_negative.svg" alt="git"></a>
-        <a class="image-wrap" href="https://www.linkedin.com/in/frederic-r-6a2251101/" target="_blank">
+        <a class="image-wrap" href="https://www.linkedin.com/in/frederic-rieg-6a2251101/" target="_blank">
             <img src="assets/img/linkedin_negative.svg" alt="linkedin"></a>
     </div>
 </div>

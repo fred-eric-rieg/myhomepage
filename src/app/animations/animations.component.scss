@@ -1,14 +1,15 @@
-main {
-    display: flex;
-    flex-direction: column;
-    max-width: 1024px;
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
     margin: 0 auto;
     overflow-x: hidden;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
 
-
-main::-webkit-scrollbar {
+canvas::-webkit-scrollbar {
     display: none;
 }

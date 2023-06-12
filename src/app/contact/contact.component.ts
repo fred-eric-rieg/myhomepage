@@ -1,13 +1,15 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
+import { ScrollService } from '../scroll.service';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
-export class ContactComponent {
+export class ContactComponent implements AfterViewInit {
   @ViewChild('myForm') myForm!: ElementRef;
+  @ViewChild('contact') contact: ElementRef | undefined;
 
   showMessage: boolean = false;
 
@@ -17,8 +19,19 @@ export class ContactComponent {
     text: ''
   });
 
-  constructor(private formBuilder: FormBuilder) {
+  /**
+   * 
+   * @param formBuilder injects the FormBuilder service.
+   * @param scrollService injects the ScrollService service.
+   */
+  constructor(private formBuilder: FormBuilder, private scrollService: ScrollService) {
 
+  }
+
+  
+  ngAfterViewInit() {
+    // Handing over the target element to the scroll service for broadcasting.
+    this.scrollService.setScrollElement(this.contact!, 'contact');
   }
 
   /*
