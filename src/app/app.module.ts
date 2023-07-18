@@ -18,6 +18,7 @@ import { SectionProjectsFourComponent } from './section-projects-four/section-pr
 import { ReactiveFormsModule } from '@angular/forms';
 import { SectionProjectsFiveComponent } from './section-projects-five/section-projects-five.component';
 import { AnimationsComponent } from './animations/animations.component';
+import { SectionProjectsSixComponent } from './section-projects-six/section-projects-six.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { AnimationsComponent } from './animations/animations.component';
     FooterComponent,
     SectionProjectsFourComponent,
     SectionProjectsFiveComponent,
-    AnimationsComponent
+    AnimationsComponent,
+    SectionProjectsSixComponent
   ],
   imports: [
     BrowserModule,
