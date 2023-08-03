@@ -1,8 +1,9 @@
 main {
+    position: absolute;
     display: flex;
     flex-direction: column;
-    max-width: 1024px;
     margin: 0 auto;
+    width: 100%;
     overflow-x: hidden;
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -11,4 +12,5 @@ main {
 
 main::-webkit-scrollbar {
     display: none;
+    flex-grow: 1;
 }

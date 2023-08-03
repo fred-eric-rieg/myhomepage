@@ -1,23 +1,25 @@
 .section-top-background {
-    overflow: hidden;
     position: relative;
+    top: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: calc(min(100vw, 1024px));
+    width: 100%;
     height: calc(100vh - 4rem);
-    margin-bottom: 1rem;
+    margin: 0 auto;
+    z-index: 99;
 }
 
 .icons {
     position: absolute;
     right: 2rem;
-    bottom: 4rem;
+    bottom: 2rem;
     display: flex;
     flex-direction: column;
-    height: 96px;
+    height: fit-content;
     justify-content: space-around;
+    gap: 1rem;
 
     .image-wrap {
         cursor: pointer;
@@ -39,14 +41,15 @@
 
 .matrix-name {
     position: absolute;
+    top: 5rem;
     left: 2rem;
-    top: calc(33% - 20px);
     display: flex;
     align-items: flex-end;
     flex-direction: row;
-    height: 40px;
+    height: fit-content;
     width: fit-content;
     border-radius: 8px;
+    margin-top: 2rem;
 
     h1 {
         margin: 0;
@@ -62,9 +65,10 @@
 
 .scroll-container {
     position: absolute;
+    bottom: 2rem;
+    left: 2rem;
     display: flex;
     flex-direction: column;
-    bottom: 2rem;
 }
 
 .scroll {
@@ -93,18 +97,11 @@
 
 @media screen and (width < 700px) {
     .matrix-name {
-        left: 2rem;
         background: unset;
 
         h1 {
             font-size: 2rem;
             font-weight: bold;
         }
-    }
-}
-
-@media screen and (height < 1024px) {
-    .scroll-container {
-        left: 2rem;
     }
 }

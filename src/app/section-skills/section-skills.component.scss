@@ -126,6 +126,21 @@
     }
 }
 
+.animate {
+    animation: moveIn 1s ease-out;
+}
+
+@keyframes moveIn {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 @media screen and (width < 1024px) {
     .wrapper {
         width: calc(min(100vw, 1024px) - 2rem);
