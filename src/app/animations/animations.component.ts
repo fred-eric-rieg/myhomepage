@@ -15,7 +15,8 @@ export class AnimationsComponent implements AfterViewInit, OnInit {
   renderer!: THREE.WebGLRenderer;
   scene!: THREE.Scene;
   private now = Date.now();
-  private moveRight = true;
+
+  loop: boolean = true;
 
   constructor() { }
 
@@ -84,12 +85,6 @@ export class AnimationsComponent implements AfterViewInit, OnInit {
     this.scene.add(this.earth);
     this.scene.add(this.moon);
 
-    //let gridHelper = new THREE.GridHelper(200, 50);
-    //this.scene.add(gridHelper)
-
-    //let spaceTexture = new THREE.TextureLoader().load('/assets/img/bg.jpeg');
-    //this.scene.background = spaceTexture;
-
     // Setting the camera
     let aspectRatio = this.getAspectRatio();
     this.camera = new THREE.PerspectiveCamera(
@@ -118,7 +113,9 @@ export class AnimationsComponent implements AfterViewInit, OnInit {
   }
 
 
-
+  /**
+   * Sets the earth's, moon's and satelite's rotation and position in dependence of the time.
+   */
   private animate() {
     this.earth.rotation.y -= this.rotationSpeedY;
 
@@ -131,22 +128,7 @@ export class AnimationsComponent implements AfterViewInit, OnInit {
     this.satelite.position.x = 20 * Math.sin((Date.now() - this.now) * 0.0001);
     this.satelite.position.y = 20 * Math.cos((Date.now() - this.now) * 0.0001);
 
-    //this.moveCamera();
-  }
-
-
-  private moveCamera() {
-      let time = Date.now();
-      if (time - this.now < 10000) {
-        this.camera.position.x += 0.05;
-        this.camera.position.z -= 0.05;
-        this.camera.rotation.y += 0.0000001;
-      }
-      if (time - this.now > 10000 && time - this.now < 17000) {
-        this.camera.rotation.y += 0.00001;
-        this.camera.position.x -= 0.05;
-        this.camera.position.z += 0.05;
-      }
+    this.camera.lookAt(this.satelite.position);
   }
 
 
@@ -167,16 +149,17 @@ export class AnimationsComponent implements AfterViewInit, OnInit {
     }());
   }
 
-
+  /**
+   * Adding a star to the background in form of small spheres that are randomly placed.
+   */
   private addStars() {
-    let geometry = new THREE.SphereGeometry(0.01, 24, 24);
+    let geometry = new THREE.SphereGeometry(0.02, 24, 24);
     let material = new THREE.MeshBasicMaterial({ color: 0xffffff });
     let star = new THREE.Mesh(geometry, material);
     let [x, y, z] = Array(3).fill(0).map(() => THREE.MathUtils.randFloatSpread(400));
     star.position.set(x, y, z - 400);
     this.scene.add(star);
   };
-
 
   /**
    * This method is automatically invoked when the window is resized.
@@ -187,5 +170,21 @@ export class AnimationsComponent implements AfterViewInit, OnInit {
     this.renderer.setSize(window.innerWidth, window.innerHeight);
     this.camera.aspect = window.innerWidth / window.innerHeight;
     this.camera.updateProjectionMatrix();
+  }
+
+
+  @HostListener('window:scroll', ['$event'])
+  onScroll(event: any) {
+    if (event.target.scrollingElement.scrollTop > 1 && this.loop) {
+      this.camera.position.z += 1;
+    } if (event.target.scrollingElement.scrollTop === 5353 && this.loop) {
+      this.loop = false;
+    } if (event.target.scrollingElement.scrollTop < 5353 && !this.loop) {
+      this.camera.position.z -= 1;
+    } if (event.target.scrollingElement.scrollTop === 0 && !this.loop) {
+      this.loop = true;
+    } else {
+      return;
+    }
   }
 }

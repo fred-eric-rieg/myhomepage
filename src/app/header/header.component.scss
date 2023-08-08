@@ -13,8 +13,7 @@
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    max-width: 1024px;
-    width: calc(min(100vw, 1024px) - 4rem);
+    width: calc(100vw - 4rem);
     height: 100%;
 
     .header-right {
