@@ -188,9 +188,4 @@ export class AnimationsComponent implements AfterViewInit, OnInit {
     this.camera.aspect = window.innerWidth / window.innerHeight;
     this.camera.updateProjectionMatrix();
   }
-
-  @HostListener('window:scroll', ['$event'])
-  onWindowScroll($event: any) {
-    
-  }
 }

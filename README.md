@@ -1,5 +1,6 @@
-#My Homepage
+# My Homepage
 
-Written in TypeScript, HTML5, SCSS and the Angular Framework.
+## Created with Angular Framework
 
-It includes a rendered 3D szene with three.js library and a custom little satellite created with blender.
+### Page scolling implemented with RxJS Behaviour Subjects
+### Intro 3D-Scene created with THREE.js library and a satellite model with Blender
