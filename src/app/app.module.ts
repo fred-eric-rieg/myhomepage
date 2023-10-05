@@ -19,6 +19,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { SectionProjectsFiveComponent } from './section-projects-five/section-projects-five.component';
 import { AnimationsComponent } from './animations/animations.component';
 import { SectionProjectsSixComponent } from './section-projects-six/section-projects-six.component';
+import { SectionProjectsBackendComponent } from './section-projects-backend/section-projects-backend.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { SectionProjectsSixComponent } from './section-projects-six/section-proj
     SectionProjectsFourComponent,
     SectionProjectsFiveComponent,
     AnimationsComponent,
-    SectionProjectsSixComponent
+    SectionProjectsSixComponent,
+    SectionProjectsBackendComponent
   ],
   imports: [
     BrowserModule,
