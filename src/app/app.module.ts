@@ -20,6 +20,7 @@ import { SectionProjectsFiveComponent } from './section-projects-five/section-pr
 import { AnimationsComponent } from './animations/animations.component';
 import { SectionProjectsSixComponent } from './section-projects-six/section-projects-six.component';
 import { SectionProjectsBackendComponent } from './section-projects-backend/section-projects-backend.component';
+import { SectionProjectsCrmComponent } from './section-projects-crm/section-projects-crm.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { SectionProjectsBackendComponent } from './section-projects-backend/sect
     SectionProjectsFiveComponent,
     AnimationsComponent,
     SectionProjectsSixComponent,
-    SectionProjectsBackendComponent
+    SectionProjectsBackendComponent,
+    SectionProjectsCrmComponent
   ],
   imports: [
     BrowserModule,
